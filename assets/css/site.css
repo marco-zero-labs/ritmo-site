@@ -132,11 +132,11 @@ h3 { font-size: 19px; line-height: 27px; font-weight: 600; letter-spacing: -0.01
 .promises .i { color: var(--positive); margin-top: 1px; }
 
 .stage {
-  position: relative; display: flex; align-items: center; justify-content: center;
+  position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center;
   min-height: 560px; padding: var(--space-12) var(--space-4) 56px;
-  border-radius: 28px; background: var(--brand); overflow: hidden; isolation: isolate;
+  border-radius: 28px; background: var(--stage-ground, var(--brand)); overflow: hidden; isolation: isolate;
 }
-.stage .route { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; color: var(--on-brand); }
+.stage .route { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; color: var(--stage-ink, var(--on-brand)); }
 .route .path { fill: none; stroke: currentColor; stroke-opacity: 0.32; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 0; }
 .route .stop { fill: currentColor; fill-opacity: 0.45; }
 .route .ring { fill: none; stroke: currentColor; stroke-opacity: 0.6; stroke-width: 3; }
@@ -150,7 +150,7 @@ h3 { font-size: 19px; line-height: 27px; font-weight: 600; letter-spacing: -0.01
 @keyframes appear { to { opacity: 1; } }
 @media (min-width: 1000px) { .hero-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); } }
 @media (max-width: 599px) { .stage { min-height: 0; padding-top: var(--space-8); } .hero .actions .button { width: 100%; } }
-.stage figcaption { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; color: var(--on-brand); opacity: 0.8; }
+.stage figcaption { position: absolute; left: 0; right: 0; bottom: 14px; text-align: center; color: var(--stage-ink, var(--on-brand)); opacity: 0.8; }
 
 /* Device frames (drawn here, not in the images) */
 .frame { overflow: hidden; background: var(--surface); }
@@ -344,7 +344,8 @@ html[lang="en"] .founders li:last-child::before { content: " and "; }
 .statement .icon-box .i { width: 26px; height: 26px; }
 
 /* Dark theme: keep the petrol panels deep instead of the bright text-safe accent */
-[data-theme="dark"] .stage,
+/* The stage holds the live demo, whose screen needs the real dark tokens, so it uses its own variables. */
+[data-theme="dark"] .stage { --stage-ground: #0d5c6b; --stage-ink: #ffffff; }
 [data-theme="dark"] .contact-panel,
 [data-theme="dark"] .about-mark { --brand: #0d5c6b; --on-brand: #ffffff; }
 

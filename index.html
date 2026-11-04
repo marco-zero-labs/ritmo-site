@@ -26,8 +26,10 @@
   <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/demo.css">
   <script src="assets/theme.js"></script>
   <script src="assets/menu.js" defer></script>
+  <script src="assets/demo.js" defer></script>
 </head>
 <body>
   <svg class="sprite" aria-hidden="true"><symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol><symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol><symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></symbol><symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="M2 2l20 20"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol></svg>
@@ -73,8 +75,60 @@
         </div>
         <figure class="stage">
           <svg class="route" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><polyline class="path" pathLength="1" points="-40,640 80,500 50,330 150,140 430,80 540,190"/><circle class="stop s1" cx="80" cy="500" r="9"/><circle class="stop s2" cx="50" cy="330" r="9"/><circle class="stop s3" cx="150" cy="140" r="9"/><circle class="stop s3" cx="430" cy="80" r="9"/><circle class="ring" cx="540" cy="190" r="16"/></svg>
-          <div class="frame frame--phone"><picture><source srcset="assets/screens/pt-BR/MobileApp-dark.png" media="(prefers-color-scheme: dark)"><img src="assets/screens/pt-BR/MobileApp-light.png" width="390" height="800" fetchpriority="high" alt="Celular com o Ritmo aberto: o vendedor pergunta como está um cliente e recebe o último pedido, o ticket médio e a hora da atualização."></picture></div>
-          <figcaption>Tela ilustrativa, com dados fictícios.</figcaption>
+          <button class="demo-toggle" type="button" data-demo-toggle aria-pressed="false" data-pause="Pausar demonstração" data-resume="Continuar demonstração" hidden>Pausar demonstração</button>
+          <p class="visually-hidden">Demonstração: o vendedor pergunta como está um cliente e recebe o último pedido, o ticket médio e o que ele costuma comprar. Depois, vê quais clientes saíram do ritmo, recebe um aviso de boleto vencido e abre a rota do dia, com 7 paradas e 38 km.</p>
+          <div class="frame frame--phone">
+            <div class="demo" data-demo data-scene="3" data-question="Como está o Mercadinho São José?" aria-hidden="true">
+              <div class="demo-screen">
+                <div class="demo-status"><span>9:41</span><span>5G</span></div>
+                <div class="demo-views">
+                  <div class="demo-ask">
+                    <div class="demo-top"><span>Pergunte ao Ritmo</span><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/></svg></div>
+                    <div class="demo-chat">
+                      <div class="demo-question">Como está o Mercadinho São José?</div>
+                      <div class="demo-slot">
+                        <div class="demo-thinking"><span class="demo-dot"></span><span>Consultando o sistema da empresa…</span></div>
+                        <div class="demo-answer">
+                          <div class="demo-answer-head">Mercadinho São José</div>
+                          <div class="demo-answer-body">
+                            <div class="demo-facts">
+                              <div class="demo-fact"><span class="demo-fact-label">Último pedido</span><span class="demo-fact-value">R$ 3.420</span><span class="demo-fact-meta">2 de out.</span></div>
+                              <div class="demo-fact"><span class="demo-fact-label">Ticket médio</span><span class="demo-fact-value">R$ 3.100</span></div>
+                            </div>
+                            <p>Compra arroz, feijão e óleo a cada duas semanas. Sem café desde agosto.</p>
+                          </div>
+                          <div class="demo-answer-foot"><span>Dos dados da sua empresa</span><span>há 12 min</span></div>
+                        </div>
+                      </div>
+                      <div class="demo-chips"><span class="demo-chip">Quem parou de comprar?<span class="demo-touch"></span></span><span class="demo-chip">Minha meta</span></div>
+                      <div class="demo-reply">2 clientes saíram do ritmo: Mercearia Central (caiu 40%) e Atacadão do Bairro (78 dias sem comprar).</div>
+                    </div>
+                    <div class="demo-composer"><div class="demo-input"><span class="demo-typed" data-demo-typed></span><span class="demo-placeholder">Pergunte sobre um cliente…</span></div><span class="demo-send"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-3-7z"/></svg></span></div>
+                  </div>
+                  <div class="demo-route">
+                    <div class="demo-top"><span>Rota de hoje</span></div>
+                    <svg class="demo-map" viewBox="0 0 390 300"><path class="water" d="M0 210 C 60 190, 110 230, 170 215 S 280 190, 390 215 L390 240 C 300 220, 220 250, 160 240 S 60 220, 0 235z"/><rect class="block" x="12" y="12" width="80" height="58" rx="3"/><rect class="block" x="104" y="12" width="96" height="58" rx="3"/><rect class="block" x="212" y="12" width="70" height="58" rx="3"/><rect class="block" x="294" y="12" width="84" height="58" rx="3"/><rect class="block" x="12" y="82" width="80" height="50" rx="3"/><rect class="block" x="104" y="82" width="96" height="50" rx="3"/><rect class="block" x="212" y="82" width="70" height="50" rx="3"/><rect class="block" x="294" y="82" width="84" height="50" rx="3"/><rect class="block" x="12" y="144" width="80" height="40" rx="3"/><rect class="block" x="104" y="144" width="96" height="40" rx="3"/><rect class="block" x="212" y="144" width="70" height="40" rx="3"/><rect class="block" x="294" y="144" width="84" height="40" rx="3"/><rect class="block" x="12" y="250" width="120" height="40" rx="3"/><rect class="block" x="144" y="252" width="110" height="38" rx="3"/><rect class="block" x="266" y="250" width="112" height="40" rx="3"/><path class="avenue" d="M98 0V300M0 138H390M288 0V300"/><path class="line" pathLength="1" d="M98 138 L206 138 L206 76 L288 76 L288 30 L340 30 L340 76 L288 76 L288 138 L340 138 L340 186 L150 186 L150 260"/><g class="pin" style="--stop:0"><circle cx="98" cy="138" r="12"/><text x="98" y="142">1</text></g><g class="pin pin--alert" style="--stop:1"><circle cx="206" cy="76" r="12"/><text x="206" y="80">2</text></g><g class="pin" style="--stop:2"><circle cx="288" cy="76" r="12"/><text x="288" y="80">3</text></g><g class="pin" style="--stop:3"><circle cx="340" cy="30" r="12"/><text x="340" y="34">4</text></g><g class="pin pin--alert" style="--stop:4"><circle cx="340" cy="138" r="12"/><text x="340" y="142">5</text></g><g class="pin" style="--stop:5"><circle cx="206" cy="186" r="12"/><text x="206" y="190">6</text></g><g class="pin" style="--stop:6"><circle cx="150" cy="260" r="12"/><text x="150" y="264">7</text></g></svg>
+                    <div class="demo-route-panel">
+                      <div class="demo-route-summary">7 paradas · 38 km</div>
+                      <div class="demo-button">Iniciar navegação</div>
+                      <div class="demo-stop"><span class="demo-stop-name">Supermercado Boa Vista</span><span class="demo-stop-why">Abre às 09:00 · <strong>vencido R$ 890</strong></span></div>
+                    </div>
+                  </div>
+                  <div class="demo-notice"><svg class="demo-notice-mark" viewBox="0 0 64 64"><rect class="tile" width="64" height="64" rx="15"/><polyline class="line" points="16,46 27,31 39,38 48,19"/><circle class="stop" cx="16" cy="46" r="3.5"/><circle class="stop" cx="27" cy="31" r="3.5"/><circle class="stop" cx="39" cy="38" r="3.5"/><circle class="ring" cx="48" cy="19" r="5"/></svg><div class="demo-notice-body"><div class="demo-notice-head"><span>Ritmo</span><span>agora</span></div><div class="demo-notice-title">Boleto vencido</div><div class="demo-notice-text">Supermercado Boa Vista · R$ 890 · 12 dias</div></div></div>
+                </div>
+                <div class="demo-tabs">
+                  <div class="demo-tab demo-tab--ask"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Perguntar</div>
+                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></svg>Clientes</div>
+                  <div class="demo-tab demo-tab--route"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Rota</div>
+                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>Alertas<span class="demo-badge">3</span></div>
+                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7"/></svg>Eu</div>
+                </div>
+                <div class="demo-home"></div>
+              </div>
+              <div class="demo-veil"></div>
+            </div>
+          </div>
+          <figcaption>Demonstração ilustrativa, com dados fictícios.</figcaption>
         </figure>
       </div>
     </section>
