@@ -23,7 +23,21 @@ pnpm screenshots
 
 To use another location: `node scripts/screenshots.mjs <path to docs/design-system/reference>`.
 
-The script opens each design system screen in light and dark, at 2x, removes the built-in device frame, replaces the working name "Sales Copilot" with "Ritmo" and saves it to `assets/screens/`. The frames on the site are drawn in CSS.
+The script opens each design system screen in light and dark, at 2x, removes the built-in device frame, replaces the working name "Sales Copilot" with "Ritmo" and saves it to `assets/screens/<language>/`. The frames on the site are drawn in CSS.
+
+The design system's screens have fixed English text, so the Portuguese version comes from `scripts/screens.pt-BR.json`, applied at capture time. When a screen gets new text, add it there, or it stays in English.
+
+## Regenerate the link preview images
+
+```bash
+node scripts/og-image.mjs
+```
+
+This writes `assets/og-image-pt-BR.png` and `assets/og-image-en.png`.
+
+## Take review screenshots
+
+With `pnpm serve` running: `node scripts/capture.mjs <output folder>`.
 
 ## Update the tokens
 
