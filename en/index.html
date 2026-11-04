@@ -1,264 +1,2689 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ritmo: the sales copilot for people who sell on the street</title>
-  <meta name="description" content="Walk into every visit knowing what to sell. Ritmo answers instantly on WhatsApp, the app or your computer. In development, looking for pilot companies.">
-  <link rel="canonical" href="https://marco-zero-labs.github.io/ritmo-site/en/">
-  <link rel="alternate" hreflang="pt-BR" href="https://marco-zero-labs.github.io/ritmo-site/">
-  <link rel="alternate" hreflang="en" href="https://marco-zero-labs.github.io/ritmo-site/en/">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1b1b19" media="(prefers-color-scheme: dark)">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Ritmo">
-  <meta property="og:title" content="Ritmo: the sales copilot for people who sell on the street">
-  <meta property="og:description" content="Walk into every visit knowing what to sell, with your company’s data, alerts and the route of the day. In development, looking for pilot companies.">
-  <meta property="og:url" content="https://marco-zero-labs.github.io/ritmo-site/en/">
-  <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og-image-en.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="The Ritmo mark and the title The sales copilot for people who sell on the street, for walking into every visit knowing what to sell.">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
-  <link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../assets/css/tokens.css">
-  <link rel="stylesheet" href="../assets/css/site.css">
-  <link rel="stylesheet" href="../assets/css/demo.css">
-  <script src="../assets/theme.js"></script>
-  <script src="../assets/menu.js" defer></script>
-  <script src="../assets/demo.js" defer></script>
-</head>
-<body>
-  <svg class="sprite" aria-hidden="true"><symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol><symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol><symbol id="i-factory" viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1M12 18h1M7 18h1"/></symbol><symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol><symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></symbol><symbol id="i-eyeoff" viewBox="0 0 24 24"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><path d="M2 2l20 20"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol><symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol><symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol></svg>
-  <a class="skip-link" href="#content">Skip to content</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ritmo · The sales copilot for people who sell on the street</title>
+    <meta
+      name="description"
+      content="Walk into every visit knowing what to sell. Ritmo answers instantly on WhatsApp, the app or your computer. In development, looking for pilot companies."
+    />
+    <link rel="canonical" href="https://marco-zero-labs.github.io/ritmo-site/en/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://marco-zero-labs.github.io/ritmo-site/" />
+    <link rel="alternate" hreflang="en" href="https://marco-zero-labs.github.io/ritmo-site/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://marco-zero-labs.github.io/ritmo-site/" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1b19" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Ritmo" />
+    <meta property="og:title" content="Ritmo · The sales copilot for people who sell on the street" />
+    <meta
+      property="og:description"
+      content="Walk into every visit knowing what to sell, with your company’s data, alerts and the route of the day. In development, looking for pilot companies."
+    />
+    <meta property="og:url" content="https://marco-zero-labs.github.io/ritmo-site/en/" />
+    <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="The Ritmo mark and the title The sales copilot for people who sell on the street."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="../assets/fonts/ibm-plex-sans-latin-600-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="../assets/fonts/ibm-plex-sans-latin-400-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../assets/css/tokens.css" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <link rel="stylesheet" href="../assets/css/device.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+    <script src="../assets/theme.js"></script>
+    <script src="../assets/menu.js" defer></script>
+    <script src="../assets/demo.js" defer></script>
+    <script src="../assets/site.js" defer></script>
+  </head>
+  <body>
+    <svg class="sprite" aria-hidden="true">
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <rect x="5" y="2" width="14" height="20" rx="2" />
+        <path d="M12 18h.01" />
+      </symbol>
+      <symbol id="i-monitor" viewBox="0 0 24 24">
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path d="M8 21h8M12 17v4" />
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="18" rx="2" />
+        <path d="M16 2v4M8 2v4M3 10h18" />
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <path d="M10 17h4V5H2v12h3" />
+        <path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1" />
+        <circle cx="7.5" cy="17.5" r="2.5" />
+        <circle cx="17.5" cy="17.5" r="2.5" />
+      </symbol>
+      <symbol id="i-factory" viewBox="0 0 24 24">
+        <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+        <path d="M17 18h1M12 18h1M7 18h1" />
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path d="M3 3v18h18" />
+        <path d="M18 17V9M13 17V5M8 17v-3" />
+      </symbol>
+      <symbol id="i-database" viewBox="0 0 24 24">
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5v14a9 3 0 0 0 18 0V5" />
+        <path d="M3 12a9 3 0 0 0 18 0" />
+      </symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24">
+        <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+        <circle cx="12" cy="12" r="3" />
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+        <circle cx="9" cy="7" r="4" />
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+      </symbol>
+      <symbol id="i-key" viewBox="0 0 24 24">
+        <circle cx="7.5" cy="15.5" r="5.5" />
+        <path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3" />
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24">
+        <rect x="3" y="11" width="18" height="11" rx="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+        <polyline points="14 2 14 8 20 8" />
+        <path d="m9 15 2 2 4-4" />
+      </symbol>
+      <symbol id="i-eyeoff" viewBox="0 0 24 24">
+        <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24" />
+        <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68" />
+        <path d="M6.61 6.61A13.53 13.53 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61" />
+        <path d="M2 2l20 20" />
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+        />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" /></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="m22 7-10 5L2 7" />
+      </symbol>
+      <symbol id="i-sys" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="13" rx="2" />
+        <path d="M8 21h8M12 17v4" />
+      </symbol>
+    </svg>
+    <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="./" translate="no"><svg class="mark" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true"><rect class="tile" width="64" height="64" rx="15"/><polyline class="line" points="16,46 27,31 39,38 48,19"/><circle class="stop" cx="16" cy="46" r="3.5"/><circle class="stop" cx="27" cy="31" r="3.5"/><circle class="stop" cx="39" cy="38" r="3.5"/><circle class="ring" cx="48" cy="19" r="5"/></svg>Ritmo</a>
-      <nav class="nav-desktop" aria-label="Main"><a class="nav-link" href="#how-it-works">How it works</a><a class="nav-link" href="#security">Security</a><a class="nav-link" href="#pilot">Pilot</a><a class="nav-link" href="#questions">Questions</a></nav>
-      <nav class="lang-desktop" aria-label="Language">
-        <a class="nav-link" href="../" lang="pt-BR" hreflang="pt-BR" aria-label="Português">PT</a>
-        <a class="nav-link" href="./" lang="en" hreflang="en" aria-current="true" aria-label="English">EN</a>
-      </nav>
-      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Dark theme" title="Dark theme"><svg class="i i-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="i i-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
-      <a class="button button--primary button--small header-cta" href="#contact">Try it</a>
-      <details class="menu">
-        <summary><svg class="i i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="i i-close" aria-hidden="true"><use href="#i-close"/></svg><span>Menu</span></summary>
-        <div class="menu-panel">
-          <nav aria-label="Phone menu"><ul><li><a class="nav-link" href="#how-it-works">How it works</a></li><li><a class="nav-link" href="#security">Security</a></li><li><a class="nav-link" href="#pilot">Pilot</a></li><li><a class="nav-link" href="#questions">Questions</a></li></ul></nav>
-          <a class="button button--primary menu-cta" href="#contact">Try it</a>
-          <nav class="menu-languages" aria-label="Language">
-            <a class="nav-link" href="../" lang="pt-BR" hreflang="pt-BR">Português</a>
-            <a class="nav-link" href="./" lang="en" hreflang="en" aria-current="true">English</a>
-          </nav>
-        </div>
-      </details>
-    </div>
-  </header>
-
-  <main id="content">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-text">
-          <p class="status">In development, looking for pilot companies</p>
-          <h1>The sales copilot for people who sell on the street</h1>
-          <p class="lead">Walk into every visit knowing what to sell. Ritmo brings your company’s data together and answers instantly on WhatsApp, the app or your computer, with alerts and the route of the day.</p>
-          <div class="actions">
-            <a class="button button--primary" href="#contact">Become a pilot company</a>
-            <a class="button button--secondary" href="#how-it-works">See how it works</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="./" translate="no"
+          ><svg class="mark" viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
+            <rect class="tile" width="64" height="64" rx="15" />
+            <polyline class="line" points="16,46 27,31 39,38 48,19" />
+            <circle class="stop" cx="16" cy="46" r="3.5" />
+            <circle class="stop" cx="27" cy="31" r="3.5" />
+            <circle class="stop" cx="39" cy="38" r="3.5" />
+            <circle class="ring" cx="48" cy="19" r="5" /></svg
+          >Ritmo</a
+        >
+        <nav class="nav-desktop" aria-label="Main">
+          <a class="nav-link" href="#how-it-works">How it works</a
+          ><a class="nav-link" href="#on-your-phone">On your phone</a><a class="nav-link" href="#security">Security</a
+          ><a class="nav-link" href="#pilot">Pilot</a><a class="nav-link" href="#questions">Questions</a>
+        </nav>
+        <nav class="lang-desktop" aria-label="Language">
+          <a class="nav-link" href="../" lang="pt-BR" hreflang="pt-BR" aria-label="Português">PT</a
+          ><a class="nav-link" href="./" lang="en" hreflang="en" aria-label="English" aria-current="true">EN</a>
+        </nav>
+        <div class="theme-desktop">
+          <div class="seg needs-js" role="radiogroup" aria-label="Theme">
+            <label class="seg-option seg-option--icon" title="Light"
+              ><input type="radio" name="theme-header" value="light" data-pref="theme" /><span
+                ><svg class="i" aria-hidden="true"><use href="#i-sun" /></svg
+                ><span class="visually-hidden">Light</span></span
+              ></label
+            ><label class="seg-option seg-option--icon" title="Dark"
+              ><input type="radio" name="theme-header" value="dark" data-pref="theme" /><span
+                ><svg class="i" aria-hidden="true"><use href="#i-moon" /></svg
+                ><span class="visually-hidden">Dark</span></span
+              ></label
+            ><label class="seg-option seg-option--icon" title="System"
+              ><input type="radio" name="theme-header" value="system" data-pref="theme" /><span
+                ><svg class="i" aria-hidden="true"><use href="#i-sys" /></svg
+                ><span class="visually-hidden">System</span></span
+              ></label
+            >
           </div>
-          <p class="built-for"><strong>Built for</strong> manufacturers, distributors, independent sales reps and field sellers</p>
-          <ul class="promises"><li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Figures from your company’s system, with their source and time</span></li><li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Read-only: it changes nothing in your system</span></li><li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>A data protection agreement (LGPD) before any real data</span></li></ul>
         </div>
-        <figure class="stage">
-          <svg class="route" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><polyline class="path" pathLength="1" points="-40,640 80,500 50,330 150,140 430,80 540,190"/><circle class="stop s1" cx="80" cy="500" r="9"/><circle class="stop s2" cx="50" cy="330" r="9"/><circle class="stop s3" cx="150" cy="140" r="9"/><circle class="stop s3" cx="430" cy="80" r="9"/><circle class="ring" cx="540" cy="190" r="16"/></svg>
-          <button class="demo-toggle" type="button" data-demo-toggle aria-pressed="false" data-pause="Pause demo" data-resume="Resume demo" hidden>Pause demo</button>
-          <p class="visually-hidden">Demo: a seller asks how a customer is doing and gets the last order, the average ticket and what the customer usually buys. Then the seller sees which customers fell out of rhythm, gets an overdue invoice alert and opens the route of the day, with 7 stops and 38 km.</p>
-          <div class="frame frame--phone">
-            <div class="demo" data-demo data-scene="3" data-question="How is Mercadinho São José?" aria-hidden="true">
-              <div class="demo-screen">
-                <div class="demo-status"><span>9:41</span><span>5G</span></div>
-                <div class="demo-views">
-                  <div class="demo-ask">
-                    <div class="demo-top"><span>Ask Ritmo</span><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/></svg></div>
-                    <div class="demo-chat">
-                      <div class="demo-question">How is Mercadinho São José?</div>
-                      <div class="demo-slot">
-                        <div class="demo-thinking"><span class="demo-dot"></span><span>Checking your company’s system…</span></div>
-                        <div class="demo-answer">
-                          <div class="demo-answer-head">Mercadinho São José</div>
-                          <div class="demo-answer-body">
-                            <div class="demo-facts">
-                              <div class="demo-fact"><span class="demo-fact-label">Last order</span><span class="demo-fact-value">R$ 3.420</span><span class="demo-fact-meta">Oct 2</span></div>
-                              <div class="demo-fact"><span class="demo-fact-label">Avg. ticket</span><span class="demo-fact-value">R$ 3.100</span></div>
-                            </div>
-                            <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
+        <a class="button button--primary button--small header-cta" href="#contact">Try it</a>
+        <details class="menu">
+          <summary>
+            <svg class="i i-open" aria-hidden="true"><use href="#i-menu" /></svg
+            ><svg class="i i-close" aria-hidden="true"><use href="#i-close" /></svg><span>Menu</span>
+          </summary>
+          <div class="menu-panel">
+            <nav aria-label="Phone menu">
+              <ul>
+                <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+                <li><a class="nav-link" href="#on-your-phone">On your phone</a></li>
+                <li><a class="nav-link" href="#security">Security</a></li>
+                <li><a class="nav-link" href="#pilot">Pilot</a></li>
+                <li><a class="nav-link" href="#questions">Questions</a></li>
+              </ul>
+            </nav>
+            <a class="button button--primary menu-cta" href="#contact">Try it</a>
+            <nav class="menu-languages" aria-label="Language on phone">
+              <a class="nav-link" href="../" lang="pt-BR" hreflang="pt-BR" aria-label="Português">Português</a
+              ><a class="nav-link" href="./" lang="en" hreflang="en" aria-label="English" aria-current="true"
+                >English</a
+              >
+            </nav>
+            <div class="seg needs-js" role="radiogroup" aria-label="Theme on phone">
+              <label class="seg-option"
+                ><input type="radio" name="theme-menu" value="light" data-pref="theme" /><span>Light</span></label
+              ><label class="seg-option"
+                ><input type="radio" name="theme-menu" value="dark" data-pref="theme" /><span>Dark</span></label
+              ><label class="seg-option"
+                ><input type="radio" name="theme-menu" value="system" data-pref="theme" /><span>System</span></label
+              >
+            </div>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-text">
+            <p class="status">In development</p>
+            <h1>Ritmo · The&nbsp;sales copilot for people who sell on the street</h1>
+            <p class="lead">
+              Walk into every visit knowing what to sell. Ritmo brings your company’s data together and answers
+              instantly on WhatsApp, the app or your computer, with alerts and the route of the day.
+            </p>
+            <div class="actions">
+              <a
+                class="button button--primary"
+                href="https://wa.me/5581988980089?text=Hello!%20I%20saw%20the%20Ritmo%20site%20and%20want%20to%20know%20about%20the%20pilot."
+                ><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Become a pilot company</a
+              >
+              <a class="button button--secondary" href="#how-it-works">See how it works</a>
+            </div>
+          </div>
+          <figure class="stage">
+            <svg class="route" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <polyline class="path" pathLength="1" points="-40,640 80,500 50,330 150,140 430,80 540,190" />
+              <circle class="stop s1" cx="80" cy="500" r="9" />
+              <circle class="stop s2" cx="50" cy="330" r="9" />
+              <circle class="stop s3" cx="150" cy="140" r="9" />
+              <circle class="stop s3" cx="430" cy="80" r="9" />
+              <circle class="ring" cx="540" cy="190" r="16" />
+            </svg>
+            <button
+              class="demo-toggle"
+              type="button"
+              data-demo-toggle
+              data-pause="Pause demo"
+              data-resume="Resume demo"
+              hidden
+            >
+              Pause demo
+            </button>
+            <p class="visually-hidden">
+              A demo in 8 scenes: a seller gets the daily briefing, asks how a customer is doing, sees that the figure
+              comes from the ERP, chooses between two similar customers, asks the same on WhatsApp, opens the route with
+              14 km saved and gets an overdue invoice alert.
+            </p>
+            <div class="device device--ios" data-device aria-hidden="true">
+              <div class="device-frame">
+                <span class="device-camera"></span>
+                <div class="device-screen">
+                  <div class="app">
+                    <div class="demo" data-demo data-scene="4" data-question="How is Mercadinho São José?">
+                      <div class="app-views">
+                        <div class="demo-scene app" data-s="1">
+                          <div class="app-status app-status--lock">
+                            <span></span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
                           </div>
-                          <div class="demo-answer-foot"><span>From your company’s data</span><span>12 min ago</span></div>
+                          <div class="app-lock">
+                            <div class="app-clock">07:00</div>
+                            <div class="app-date">Monday, October 26</div>
+                            <div class="app-notice">
+                              <svg class="app-notice-mark app-mark" viewBox="0 0 64 64" aria-hidden="true">
+                                <rect class="tile" width="64" height="64" rx="15" />
+                                <polyline class="line" points="16,46 27,31 39,38 48,19" />
+                                <circle class="stop" cx="16" cy="46" r="3.5" />
+                                <circle class="stop" cx="27" cy="31" r="3.5" />
+                                <circle class="stop" cx="39" cy="38" r="3.5" />
+                                <circle class="ring" cx="48" cy="19" r="5" />
+                              </svg>
+                              <div class="app-notice-main">
+                                <div class="app-notice-head"><span translate="no">Ritmo</span><span>now</span></div>
+                                <div class="app-notice-title">Your briefing is ready</div>
+                                <div class="app-notice-text">7 visits today · 2 need attention</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="demo-scene app" data-s="2">
+                          <div class="app-status">
+                            <span>07:01</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-top"><span class="app-top-title">Good morning, Ana</span></div>
+                          <div class="app-body">
+                            <div class="app-card">
+                              <div class="app-card-head">Today</div>
+                              <div class="app-card-body">
+                                <div class="app-facts">
+                                  <div class="app-fact">
+                                    <span class="app-label">Visits</span><span class="app-value">7</span>
+                                  </div>
+                                  <div class="app-fact">
+                                    <span class="app-label">Need attention</span
+                                    ><span class="app-value app-negative">2</span>
+                                  </div>
+                                </div>
+                                <p>Supermercado Boa Vista: overdue invoice of R$ 890.</p>
+                                <p>Mercearia Central: down 40%.</p>
+                              </div>
+                            </div>
+                            <div class="app-button">See route</div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app" data-s="3">
+                          <div class="app-status">
+                            <span>9:41</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-top"><span class="app-top-title">Ask Ritmo</span></div>
+                          <div class="app-body"></div>
+                          <div class="app-composer">
+                            <div class="app-input">
+                              <span class="demo-typed" data-demo-typed></span
+                              ><span class="demo-placeholder">Ask about a customer…</span>
+                            </div>
+                            <span class="app-send"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12 20 4l-6 16-3-7z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app is-active" data-s="4">
+                          <div class="app-status">
+                            <span>9:41</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-top"><span class="app-top-title">Ask Ritmo</span></div>
+                          <div class="app-body">
+                            <div class="app-question">How is Mercadinho São José?</div>
+                            <div class="app-card">
+                              <div class="app-card-head" translate="no">Mercadinho São José</div>
+                              <div class="app-card-body">
+                                <div class="app-facts">
+                                  <div class="app-fact">
+                                    <span class="app-label">Last order</span><span class="app-value">R$ 3,420</span
+                                    ><span class="app-small app-muted">Oct 2</span>
+                                  </div>
+                                  <div class="app-fact">
+                                    <span class="app-label">Avg. ticket</span><span class="app-value">R$ 3,100</span>
+                                  </div>
+                                </div>
+                                <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
+                              </div>
+                              <div class="app-card-foot demo-source">
+                                <span>From your company’s data</span><span>Updated 12 min ago</span>
+                              </div>
+                            </div>
+                            <div class="demo-note">The figure comes from the ERP, not the AI</div>
+                          </div>
+                          <div class="app-composer">
+                            <div class="app-input">Ask about a customer…</div>
+                            <span class="app-send"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12 20 4l-6 16-3-7z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app" data-s="5">
+                          <div class="app-status">
+                            <span>9:41</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-top"><span class="app-top-title">Ask Ritmo</span></div>
+                          <div class="app-body">
+                            <div class="app-question">How is São José?</div>
+                            <div class="app-reply">Which São José?</div>
+                            <div class="app-options">
+                              <span class="app-option"
+                                ><b>Mercadinho São José</b
+                                ><span class="app-small app-muted">São Lourenço da Mata</span></span
+                              ><span class="app-option"
+                                ><b>Padaria São José</b><span class="app-small app-muted">Recife</span></span
+                              >
+                            </div>
+                          </div>
+                          <div class="app-composer">
+                            <div class="app-input">Ask about a customer…</div>
+                            <span class="app-send"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12 20 4l-6 16-3-7z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app" data-s="6">
+                          <div class="app-status">
+                            <span>9:41</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="wa">
+                            <div class="wa-msg wa-msg--out">How is Mercadinho São José?</div>
+                            <div class="wa-msg">
+                              <b>Mercadinho São José</b><br />Last order: <b>R$ 3,420</b> on Oct 2.<br />No coffee since
+                              August.<br /><span class="wa-muted">Updated 12 min ago</span>
+                            </div>
+                            <div class="wa-buttons">
+                              <span class="wa-button">See product mix</span><span class="wa-button">Open invoices</span>
+                            </div>
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app" data-s="7">
+                          <div class="app-status">
+                            <span>9:41</span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-top"><span class="app-top-title">Today’s route</span></div>
+                          <svg class="app-map" viewBox="0 0 390 300" aria-hidden="true">
+                            <path
+                              class="water"
+                              d="M0 210 C 60 190, 110 230, 170 215 S 280 190, 390 215 L390 240 C 300 220, 220 250, 160 240 S 60 220, 0 235z"
+                            />
+                            <rect class="block" x="12" y="12" width="80" height="58" rx="3" />
+                            <rect class="block" x="104" y="12" width="96" height="58" rx="3" />
+                            <rect class="block" x="212" y="12" width="70" height="58" rx="3" />
+                            <rect class="block" x="294" y="12" width="84" height="58" rx="3" />
+                            <rect class="block" x="12" y="82" width="80" height="50" rx="3" />
+                            <rect class="block" x="104" y="82" width="96" height="50" rx="3" />
+                            <rect class="block" x="212" y="82" width="70" height="50" rx="3" />
+                            <rect class="block" x="294" y="82" width="84" height="50" rx="3" />
+                            <rect class="block" x="12" y="144" width="80" height="40" rx="3" />
+                            <rect class="block" x="104" y="144" width="96" height="40" rx="3" />
+                            <rect class="block" x="212" y="144" width="70" height="40" rx="3" />
+                            <rect class="block" x="294" y="144" width="84" height="40" rx="3" />
+                            <rect class="block" x="12" y="250" width="120" height="40" rx="3" />
+                            <rect class="block" x="144" y="252" width="110" height="38" rx="3" />
+                            <rect class="block" x="266" y="250" width="112" height="40" rx="3" />
+                            <path class="avenue" d="M98 0V300M0 138H390M288 0V300" />
+                            <path
+                              class="line"
+                              d="M98 138 L206 138 L206 76 L288 76 L288 30 L340 30 L340 76 L288 76 L288 138 L340 138 L340 186 L150 186 L150 260"
+                            />
+                            <g class="pin">
+                              <circle cx="98" cy="138" r="12" />
+                              <text x="98" y="142">1</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="206" cy="76" r="12" />
+                              <text x="206" y="80">2</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="288" cy="76" r="12" />
+                              <text x="288" y="80">3</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="340" cy="30" r="12" />
+                              <text x="340" y="34">4</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="340" cy="138" r="12" />
+                              <text x="340" y="142">5</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="206" cy="186" r="12" />
+                              <text x="206" y="190">6</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="150" cy="260" r="12" />
+                              <text x="150" y="264">7</text>
+                            </g>
+                          </svg>
+                          <div class="app-body">
+                            <div class="app-route-sum">
+                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                            </div>
+                            <div class="app-button">Start navigation</div>
+                            <div>
+                              <div translate="no">Supermercado Boa Vista</div>
+                              <div class="app-small app-muted">
+                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-gesture"></div>
+                        </div>
+                        <div class="demo-scene app" data-s="8">
+                          <div class="app-status app-status--lock">
+                            <span></span
+                            ><span class="app-status-icons only-ios"
+                              ><svg viewBox="0 0 18 12">
+                                <rect y="8" width="3" height="4" rx=".6" />
+                                <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                                <rect x="10" y="3" width="3" height="9" rx=".6" />
+                                <rect x="15" width="3" height="12" rx=".6" /></svg
+                              ><svg viewBox="0 0 26 12">
+                                <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                                <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                                <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                            ><span class="app-status-icons only-android"
+                              ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                              ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-lock">
+                            <div class="app-clock">14:20</div>
+                            <div class="app-date">Monday, October 26</div>
+                            <div class="app-notice">
+                              <svg class="app-notice-mark app-mark" viewBox="0 0 64 64" aria-hidden="true">
+                                <rect class="tile" width="64" height="64" rx="15" />
+                                <polyline class="line" points="16,46 27,31 39,38 48,19" />
+                                <circle class="stop" cx="16" cy="46" r="3.5" />
+                                <circle class="stop" cx="27" cy="31" r="3.5" />
+                                <circle class="stop" cx="39" cy="38" r="3.5" />
+                                <circle class="ring" cx="48" cy="19" r="5" />
+                              </svg>
+                              <div class="app-notice-main">
+                                <div class="app-notice-head"><span translate="no">Ritmo</span><span>now</span></div>
+                                <div class="app-notice-title">Supermercado Boa Vista has an overdue invoice</div>
+                                <div class="app-notice-text">R$ 890 · 12 days</div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <div class="demo-chips"><span class="demo-chip">Who stopped buying?<span class="demo-touch"></span></span><span class="demo-chip">My target</span></div>
-                      <div class="demo-reply">2 customers fell out of rhythm: Mercearia Central (down 40%) and Atacadão do Bairro (78 days without buying).</div>
-                    </div>
-                    <div class="demo-composer"><div class="demo-input"><span class="demo-typed" data-demo-typed></span><span class="demo-placeholder">Ask about a customer…</span></div><span class="demo-send"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M4 12 20 4l-6 16-3-7z"/></svg></span></div>
-                  </div>
-                  <div class="demo-route">
-                    <div class="demo-top"><span>Today’s route</span></div>
-                    <svg class="demo-map" viewBox="0 0 390 300"><path class="water" d="M0 210 C 60 190, 110 230, 170 215 S 280 190, 390 215 L390 240 C 300 220, 220 250, 160 240 S 60 220, 0 235z"/><rect class="block" x="12" y="12" width="80" height="58" rx="3"/><rect class="block" x="104" y="12" width="96" height="58" rx="3"/><rect class="block" x="212" y="12" width="70" height="58" rx="3"/><rect class="block" x="294" y="12" width="84" height="58" rx="3"/><rect class="block" x="12" y="82" width="80" height="50" rx="3"/><rect class="block" x="104" y="82" width="96" height="50" rx="3"/><rect class="block" x="212" y="82" width="70" height="50" rx="3"/><rect class="block" x="294" y="82" width="84" height="50" rx="3"/><rect class="block" x="12" y="144" width="80" height="40" rx="3"/><rect class="block" x="104" y="144" width="96" height="40" rx="3"/><rect class="block" x="212" y="144" width="70" height="40" rx="3"/><rect class="block" x="294" y="144" width="84" height="40" rx="3"/><rect class="block" x="12" y="250" width="120" height="40" rx="3"/><rect class="block" x="144" y="252" width="110" height="38" rx="3"/><rect class="block" x="266" y="250" width="112" height="40" rx="3"/><path class="avenue" d="M98 0V300M0 138H390M288 0V300"/><path class="line" pathLength="1" d="M98 138 L206 138 L206 76 L288 76 L288 30 L340 30 L340 76 L288 76 L288 138 L340 138 L340 186 L150 186 L150 260"/><g class="pin" style="--stop:0"><circle cx="98" cy="138" r="12"/><text x="98" y="142">1</text></g><g class="pin pin--alert" style="--stop:1"><circle cx="206" cy="76" r="12"/><text x="206" y="80">2</text></g><g class="pin" style="--stop:2"><circle cx="288" cy="76" r="12"/><text x="288" y="80">3</text></g><g class="pin" style="--stop:3"><circle cx="340" cy="30" r="12"/><text x="340" y="34">4</text></g><g class="pin pin--alert" style="--stop:4"><circle cx="340" cy="138" r="12"/><text x="340" y="142">5</text></g><g class="pin" style="--stop:5"><circle cx="206" cy="186" r="12"/><text x="206" y="190">6</text></g><g class="pin" style="--stop:6"><circle cx="150" cy="260" r="12"/><text x="150" y="264">7</text></g></svg>
-                    <div class="demo-route-panel">
-                      <div class="demo-route-summary">7 stops · 38 km</div>
-                      <div class="demo-button">Start navigation</div>
-                      <div class="demo-stop"><span class="demo-stop-name">Supermercado Boa Vista</span><span class="demo-stop-why">Opens 09:00 · <strong>overdue R$ 890</strong></span></div>
                     </div>
                   </div>
-                  <div class="demo-notice"><svg class="demo-notice-mark" viewBox="0 0 64 64"><rect class="tile" width="64" height="64" rx="15"/><polyline class="line" points="16,46 27,31 39,38 48,19"/><circle class="stop" cx="16" cy="46" r="3.5"/><circle class="stop" cx="27" cy="31" r="3.5"/><circle class="stop" cx="39" cy="38" r="3.5"/><circle class="ring" cx="48" cy="19" r="5"/></svg><div class="demo-notice-body"><div class="demo-notice-head"><span>Ritmo</span><span>now</span></div><div class="demo-notice-title">Overdue invoice</div><div class="demo-notice-text">Supermercado Boa Vista · R$ 890 · 12 days</div></div></div>
                 </div>
-                <div class="demo-tabs">
-                  <div class="demo-tab demo-tab--ask"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Ask</div>
-                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7"/><path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2"/></svg>Customers</div>
-                  <div class="demo-tab demo-tab--route"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg>Route</div>
-                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg>Alerts<span class="demo-badge">3</span></div>
-                  <div class="demo-tab"><svg class="demo-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7"/></svg>Me</div>
-                </div>
-                <div class="demo-home"></div>
-              </div>
-              <div class="demo-veil"></div>
-            </div>
-          </div>
-          <figcaption>Illustrative demo with fictional data.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <div class="channels">
-      <div class="wrap">
-        <p>Works where your team already is:</p>
-        <ul><li><svg class="i" aria-hidden="true"><use href="#i-message"/></svg>WhatsApp</li><li><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>Phone</li><li><svg class="i" aria-hidden="true"><use href="#i-monitor"/></svg>Computer</li></ul>
-      </div>
-    </div>
-
-    <section class="section" aria-labelledby="problem">
-      <div class="wrap">
-        <div class="section-head"><h2 id="problem">The information exists, but it does not reach the people on the street</h2></div>
-        <ul class="day"><li><p class="when"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg>Before the visit</p><p>You arrive without knowing the last order, what the customer stopped buying or whether an invoice is overdue.</p></li><li><p class="when"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>On the route</p><p>A simple question turns into a call or a voice message to the office, and the answer takes time.</p></li><li><p class="when"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg>At the end of the month</p><p>Managers see the result when it is too late to act, and some customers stop buying without anyone noticing.</p></li></ul>
-      </div>
-    </section>
-
-    <section class="section section--band" aria-labelledby="who-for">
-      <div class="wrap">
-        <div class="section-head"><h2 id="who-for">Who it is for</h2></div>
-        <ul class="audience"><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-factory"/></svg></span><div><h3>Manufacturers</h3><p>That sell through sales reps and need the information to reach them.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg></span><div><h3>Distributors</h3><p>With teams on the street and a large portfolio of customers to visit.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span><div><h3>Independent sales reps</h3><p>Who serve many customers on their own and need information right away, without calling the office.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg></span><div><h3>Field sellers and managers</h3><p>Who follow the target and customer coverage and want to act before the end of the month.</p></div></li></ul>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="how-it-works">
-      <div class="wrap">
-        <div class="section-head"><h2 id="how-it-works">How it works</h2><p class="lead">The product is under construction. This is how it is designed to work.</p></div>
-        <div class="features">
-          <div class="feature">
-            <div class="feature-text"><h3>Ask the way you would ask a colleague</h3><p>The answer gives the figure, where it came from and when it was updated.</p><ul class="asks" aria-label="Example questions"><li>Who has not bought in 30 days?</li><li>Is there an overdue invoice?</li><li>How far am I from my target?</li></ul></div>
-            <figure class="feature-media"><div class="frame frame--message"><picture><source srcset="../assets/screens/en/WhatsAppMessages-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/WhatsAppMessages-light.png" width="452" height="463" loading="lazy" alt="WhatsApp conversation: a seller asks what a customer bought in the last 6 months and gets the total, the top products and the time of the last update."></picture></div><figcaption>Example with fictional data.</figcaption></figure>
-          </div>
-          <div class="feature">
-            <div class="feature-text"><h3>Route of the day</h3><p>Your visits in the best order, worked out by Ritmo, and one tap to open the next stop in Google Maps or Waze.</p></div>
-            <figure class="feature-media"><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenRoute-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenRoute-light.png" width="390" height="800" loading="lazy" alt="Route of the day screen: a map with numbered stops and the list of visits, with planned arrival and the reason for each visit."></picture></div><figcaption>Illustrative screen with fictional data.</figcaption></figure>
-          </div>
-          <div class="feature">
-            <div class="feature-text"><h3>Alerts before the problem</h3><p>A notice when a customer falls out of their buying rhythm, drops in volume or has an overdue invoice, on WhatsApp or your phone.</p>
-              <div class="rhythm">
-                <div class="rhythm-bars" role="img" aria-label="Example of a customer’s buying rhythm over twelve weeks: they bought in the first ten and, in the last two, should have bought and did not."><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="bought"></span><span class="missed"></span><span class="missed"></span></div>
-                <p class="rhythm-legend"><span>Example: 12 weeks of a customer’s purchases.</span><span class="alert">In the last 2, they should have bought and did not.</span></p>
               </div>
             </div>
-            <figure class="feature-media"><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenAlerts-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenAlerts-light.png" width="390" height="800" loading="lazy" alt="Alerts screen: a list by day with dropping customers, overdue invoices and inactive customers."></picture></div><figcaption>Illustrative screen with fictional data.</figcaption></figure>
+            <div class="demo-progress">
+              <p class="demo-caption" data-demo-caption data-template="{n} of 8 · " aria-live="polite">
+                4 of 8 · The answer
+              </p>
+              <div class="demo-dots" role="group" aria-label="Demo scenes">
+                <button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="Lock screen"
+                  aria-label="Scene 1: Lock screen"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="Daily briefing"
+                  aria-label="Scene 2: Daily briefing"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="Ask"
+                  aria-label="Scene 3: Ask"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="The answer"
+                  aria-label="Scene 4: The answer"
+                  aria-current="step"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="If unsure, it asks"
+                  aria-label="Scene 5: If unsure, it asks"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="On WhatsApp"
+                  aria-label="Scene 6: On WhatsApp"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="Route of the day"
+                  aria-label="Scene 7: Route of the day"
+                  hidden
+                ></button
+                ><button
+                  class="demo-dot"
+                  type="button"
+                  data-demo-dot
+                  data-label="Alert"
+                  aria-label="Scene 8: Alert"
+                  hidden
+                ></button>
+              </div>
+              <p class="demo-note-line">Illustrative demo with fictional data.</p>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="problem">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="problem">The information exists, but it does not reach the people on the street</h2>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--band" aria-labelledby="every-screen">
-      <div class="wrap">
-        <div class="section-head"><h2 id="every-screen">On every screen</h2><p class="lead">Phone, tablet, computer and WhatsApp, with the same figures on all of them.</p></div>
-        <div class="devices">
-          <figure><div class="frame frame--laptop"><picture><source srcset="../assets/screens/en/WebPortal-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/WebPortal-light.png" width="1280" height="720" loading="lazy" alt="Manager’s dashboard on a computer: the month’s results and the sales team table."></picture></div><div class="laptop-base"></div><figcaption>Computer: the manager’s dashboard.</figcaption></figure>
-          <figure><div class="frame frame--tablet"><picture><source srcset="../assets/screens/en/TabletLayout-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/TabletLayout-light.png" width="1024" height="700" loading="lazy" alt="Tablet with the customer list on the left and the chosen customer’s details on the right."></picture></div><figcaption>Tablet: list and detail side by side.</figcaption></figure>
-        </div>
-        <div class="gallery" tabindex="0" role="group" aria-label="Phone screens"><figure><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenCustomers-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenCustomers-light.png" width="390" height="800" loading="lazy" alt="Customer portfolio list, with each customer’s buying rhythm over the last 12 weeks."></picture></div><figcaption>Customer portfolio</figcaption></figure><figure><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenProductMix-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenProductMix-light.png" width="390" height="800" loading="lazy" alt="A customer’s product mix, with each product’s share of revenue."></picture></div><figcaption>Product mix</figcaption></figure><figure><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenInvoices-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenInvoices-light.png" width="390" height="800" loading="lazy" alt="A customer’s invoices, with open and overdue amounts."></picture></div><figcaption>Invoices</figcaption></figure><figure><div class="frame frame--phone"><picture><source srcset="../assets/screens/en/ScreenMe-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/ScreenMe-light.png" width="390" height="800" loading="lazy" alt="Profile screen, with the month’s results and the seller’s preferences."></picture></div><figcaption>Your profile</figcaption></figure></div>
-        <figure class="notifications"><div class="frame frame--message"><picture><source srcset="../assets/screens/en/PushNotification-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/screens/en/PushNotification-light.png" width="500" height="237" loading="lazy" alt="Alerts on the phone: a customer who dropped in volume and the daily briefing."></picture></div><figcaption>Alerts on your phone</figcaption></figure>
-        <p class="note">Illustrative screens with fictional companies and figures. The product is still under construction, and the final result may change.</p>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="security">
-      <div class="wrap">
-        <div class="section-head"><h2 id="security">Why trust it</h2><p class="lead">These are project requirements, tested as the product is built. Ritmo does not hold any certifications yet.</p></div>
-        <ul class="statements"><li class="statement"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-database"/></svg></span><h3>The figure does not come from AI</h3><p>Artificial intelligence understands the question and writes the sentence. Ritmo gets the figure straight from your company’s system (the ERP) and shows where it came from and when it was updated.</p></li><li class="statement"><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg></span><h3>Read-only in the first version</h3><p>Ritmo reads data. It does not create, change or delete anything in your company’s system.</p></li></ul>
-        <ul class="safeguards"><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span><div><h3>Everyone sees only what is theirs</h3><p>Each company sees only its own data, and each seller sees only their own portfolio.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-key"/></svg></span><div><h3>Sign in without a password</h3><p>Sign in with your fingerprint, your face or a code sent to your phone. There is no password to leak or forget.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg></span><div><h3>Protected data</h3><p>Your data travels and stays stored protected (encrypted).</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-file"/></svg></span><div><h3>LGPD, Brazil’s data protection law</h3><p>Your company decides about the data, and we sign a data protection agreement before receiving any real information. Part of the service uses companies outside Brazil, listed in that agreement.</p></div></li><li><span class="icon-box"><svg class="i" aria-hidden="true"><use href="#i-eyeoff"/></svg></span><div><h3>No route tracking</h3><p>Location is used only while the route is open. Ritmo records the visit, with the customer and the time, but not the path travelled.</p></div></li></ul>
-      </div>
-    </section>
-
-    <section class="section section--band" aria-labelledby="pilot">
-      <div class="wrap">
-        <div class="section-head"><h2 id="pilot">How the pilot works</h2><p class="lead">Where things stand: in development, looking for companies that want to test it and help shape the product.</p></div>
-        <ol class="steps"><li><h3>A conversation</h3><p>We learn how your team sells and which information it misses most.</p></li><li><h3>Data protection agreement</h3><p>We sign the agreement before any real data.</p></li><li><h3>A test with a few users</h3><p>A few sellers use Ritmo in their daily work.</p></li><li><h3>You help shape it</h3><p>Your team’s feedback decides what to improve.</p></li></ol>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="questions">
-      <div class="wrap faq-grid">
-        <div class="faq-intro"><h2 id="questions">Frequently asked questions</h2><p class="lead">Didn’t find your question? <a href="#contact">Talk to us</a>.</p></div>
-        <div class="faq"><details><summary>Do I need to change systems?<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>No. Ritmo reads data from the system your company already uses and changes nothing in it.</p></details><details><summary>Where do the figures come from?<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>From your company’s system. Artificial intelligence only understands the question and writes the sentence, and every answer shows where the figure came from and when it was updated.</p></details><details><summary>Does Ritmo track the seller?<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>It does not record the path travelled. Location is used only while the route is open, and Ritmo records the visit, with the customer and the time.</p></details><details><summary>Is it safe?<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>Security is a project requirement: each company sees only its own data, each seller only their own portfolio, with no passwords and with encrypted data. We sign a data protection agreement before receiving any real data. Ritmo is still under construction and holds no certifications.</p></details><details><summary>How much does it cost?<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></summary><p>The price is being defined with the pilot companies.</p></details></div>
-      </div>
-    </section>
-
-    <section class="section section--band" aria-labelledby="who-we-are">
-      <div class="wrap about">
-        <div class="about-mark"><svg viewBox="0 0 1080 1080" width="120" height="120" aria-hidden="true"><circle class="zero-ring" cx="540" cy="540" r="122"/><circle class="zero-dot" cx="540" cy="540" r="37"/><path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54"/></svg></div>
-        <div><h2 id="who-we-are">Who we are</h2><p class="lead">Ritmo is made by Marco Zero Labs, a software studio from Pernambuco, Brazil. The name comes from Recife’s Marco Zero, the point from which distances are measured.</p><ul class="founders" aria-label="Partners"><li>Caio</li><li>Ewerton</li><li>Ryan</li></ul></div>
-      </div>
-    </section>
-
-    <section class="section contact" aria-labelledby="contact">
-      <div class="wrap">
-        <div class="contact-panel">
-          <svg class="route" viewBox="0 0 520 520" aria-hidden="true"><polyline class="path" points="20,500 140,330 270,400 380,190 480,60"/><circle class="stop" cx="140" cy="330" r="8"/><circle class="stop" cx="270" cy="400" r="8"/><circle class="stop" cx="380" cy="190" r="8"/><circle class="ring" cx="480" cy="60" r="15"/></svg>
-          <h2 id="contact">Want to test Ritmo at your company?</h2>
-          <p>Tell us how your team sells and which system you use. We will get back to you.</p>
-          <div class="actions">
-            <a class="button button--inverse" href="mailto:marcozerolabs@gmail.com?subject=I%20want%20to%20test%20Ritmo&amp;body=Hello%2C%20I%20would%20like%20to%20talk%20about%20a%20Ritmo%20pilot.%0A%0ACompany%3A%0ANumber%20of%20sellers%3A%0AOur%20system%3A%0A"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Write to us</a>
-            <a class="button button--inverse-outline" href="https://wa.me/5581988980089?text=Hello%2C%20I%20want%20to%20test%20Ritmo"><svg class="i" aria-hidden="true"><use href="#i-message"/></svg>Message us on WhatsApp</a>
-          </div>
-          <p class="address">Or write directly to <a href="mailto:marcozerolabs@gmail.com">marcozerolabs@gmail.com</a>.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-grid">
-        <div>
-          <p class="signature"><svg viewBox="0 0 1080 1080" width="28" height="28" aria-hidden="true"><rect class="zero-tile" width="1080" height="1080" rx="240"/><circle class="zero-ring" cx="540" cy="540" r="122"/><circle class="zero-dot" cx="540" cy="540" r="37"/><path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54"/></svg><span translate="no">a marco zero labs product</span></p>
-          <p>A software studio from Pernambuco, Brazil, building Ritmo.</p>
-        </div>
-        <nav aria-label="Footer">
-          <h2>Product</h2>
-          <ul><li><a href="#how-it-works">How it works</a></li><li><a href="#security">Security</a></li><li><a href="#pilot">Pilot</a></li><li><a href="#questions">Questions</a></li></ul>
-        </nav>
-        <div>
-          <h2>Contact</h2>
-          <ul>
-            <li><a href="mailto:marcozerolabs@gmail.com">marcozerolabs@gmail.com</a></li>
-            <li><a href="https://wa.me/5581988980089?text=Hello%2C%20I%20want%20to%20test%20Ritmo">WhatsApp</a></li>
-            <li><a href="https://www.instagram.com/marcozerolabs/">Instagram @marcozerolabs</a></li>
+          <ul class="day">
+            <li>
+              <p class="when">
+                <svg class="i" aria-hidden="true"><use href="#i-clock" /></svg>Before the visit
+              </p>
+              <p>
+                You arrive without knowing the last order, what the customer stopped buying or whether an invoice is
+                overdue.
+              </p>
+            </li>
+            <li>
+              <p class="when">
+                <svg class="i" aria-hidden="true"><use href="#i-pin" /></svg>On the route
+              </p>
+              <p>A simple question turns into a call or a voice message to the office, and the answer takes time.</p>
+            </li>
+            <li>
+              <p class="when">
+                <svg class="i" aria-hidden="true"><use href="#i-calendar" /></svg>At the end of the month
+              </p>
+              <p>
+                Managers see the result when it is too late to act, and some customers stop buying without anyone
+                noticing.
+              </p>
+            </li>
           </ul>
         </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="who-for">
+        <div class="wrap">
+          <div class="section-head"><h2 id="who-for">Who it is for</h2></div>
+          <ul class="audience">
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-factory" /></svg
+              ></span>
+              <div>
+                <h3>Manufacturers</h3>
+                <p>That sell through sales reps and need the information to reach them.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-truck" /></svg
+              ></span>
+              <div>
+                <h3>Distributors</h3>
+                <p>With teams on the street and a large portfolio of customers to visit.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-pin" /></svg
+              ></span>
+              <div>
+                <h3>Independent sales reps</h3>
+                <p>
+                  Who serve many customers on their own and need information right away, without calling the office.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-chart" /></svg
+              ></span>
+              <div>
+                <h3>Field sellers and managers</h3>
+                <p>Who follow the target and customer coverage and want to act before the end of the month.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="a-day">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="a-day">A day with Ritmo</h2>
+            <p class="lead">
+              How the product is designed to follow your day on the road. An example with fictional data.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <time>07:00</time>
+              <div class="timeline-text">
+                <h3>Daily briefing</h3>
+                <p>Before you leave, you see today’s visits and what needs attention.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>7 visits</b><span>2 need attention</span></div>
+            </li>
+            <li>
+              <time>07:30</time>
+              <div class="timeline-text">
+                <h3>Route</h3>
+                <p>Your visits in the best order, with the kilometers saved.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>7 stops · 38 km</b><span>14 km saved</span></div>
+            </li>
+            <li>
+              <time>09:50</time>
+              <div class="timeline-text">
+                <h3>Before the visit</h3>
+                <p>A customer summary: last order, what stopped selling and invoices.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>Mercadinho São José</b><span>No coffee since August</span></div>
+            </li>
+            <li>
+              <time>10:05</time>
+              <div class="timeline-text">
+                <h3>At the customer’s counter</h3>
+                <p>You ask on the spot and answer with the right figure.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>R$ 3,420</b><span>Updated 12 min ago</span></div>
+            </li>
+            <li>
+              <time>14:20</time>
+              <div class="timeline-text">
+                <h3>Alert</h3>
+                <p>A notice when a customer falls out of rhythm or has an overdue invoice.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>Overdue invoice</b><span>R$ 890 · 12 days</span></div>
+            </li>
+            <li>
+              <time>18:00</time>
+              <div class="timeline-text">
+                <h3>End of day</h3>
+                <p>You see what you sold and how far you are from your target.</p>
+              </div>
+              <div class="mini" aria-hidden="true"><b>78% of target</b><span>R$ 51,680 left</span></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="how-it-works">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="how-it-works">How it works</h2>
+            <p class="lead">The product is under construction. This is how it is designed to work.</p>
+          </div>
+          <div class="trio">
+            <article>
+              <h3>Ask</h3>
+              <p>
+                Write the way you would to a colleague. The answer gives the figure, where it came from and when it was
+                updated.
+              </p>
+              <div class="device device--ios" data-device aria-hidden="true">
+                <div class="device-frame">
+                  <span class="device-camera"></span>
+                  <div class="device-screen">
+                    <div class="app">
+                      <div class="app-status">
+                        <span>9:41</span
+                        ><span class="app-status-icons only-ios"
+                          ><svg viewBox="0 0 18 12">
+                            <rect y="8" width="3" height="4" rx=".6" />
+                            <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                            <rect x="10" y="3" width="3" height="9" rx=".6" />
+                            <rect x="15" width="3" height="12" rx=".6" /></svg
+                          ><svg viewBox="0 0 26 12">
+                            <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                            <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                            <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                        ><span class="app-status-icons only-android"
+                          ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                          ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                        ></span>
+                      </div>
+                      <div class="app-views">
+                        <div class="app-view">
+                          <div class="app-top">
+                            <span class="app-top-title">Ask Ritmo</span
+                            ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                              <circle cx="11" cy="11" r="6.5" />
+                              <path d="m20 20-4-4" />
+                            </svg>
+                          </div>
+                          <div class="app-body">
+                            <div class="app-convo">
+                              <div class="app-question">How is Mercadinho São José?</div>
+                              <div class="app-card">
+                                <div class="app-card-head" translate="no">Mercadinho São José</div>
+                                <div class="app-card-body">
+                                  <div class="app-facts">
+                                    <div class="app-fact">
+                                      <span class="app-label">Last order</span><span class="app-value">R$ 3,420</span
+                                      ><span class="app-small app-muted">Oct 2</span>
+                                    </div>
+                                    <div class="app-fact">
+                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$ 3,100</span>
+                                    </div>
+                                  </div>
+                                  <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
+                                </div>
+                                <div class="app-card-foot">
+                                  <span>From your company’s data</span><span>Updated 12 min ago</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-composer">
+                            <div class="app-input">Ask about a customer…</div>
+                            <span class="app-send"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12 20 4l-6 16-3-7z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="app-gesture"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <h3>Route of the day</h3>
+              <p>Your visits in the best order, and one tap to open the next stop in Google Maps or Waze.</p>
+              <div class="device device--ios" data-device aria-hidden="true">
+                <div class="device-frame">
+                  <span class="device-camera"></span>
+                  <div class="device-screen">
+                    <div class="app">
+                      <div class="app-status">
+                        <span>9:41</span
+                        ><span class="app-status-icons only-ios"
+                          ><svg viewBox="0 0 18 12">
+                            <rect y="8" width="3" height="4" rx=".6" />
+                            <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                            <rect x="10" y="3" width="3" height="9" rx=".6" />
+                            <rect x="15" width="3" height="12" rx=".6" /></svg
+                          ><svg viewBox="0 0 26 12">
+                            <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                            <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                            <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                        ><span class="app-status-icons only-android"
+                          ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                          ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                        ></span>
+                      </div>
+                      <div class="app-views">
+                        <div class="app-view">
+                          <div class="app-top"><span class="app-top-title">Today’s route</span></div>
+                          <svg class="app-map" viewBox="0 0 390 300" aria-hidden="true">
+                            <path
+                              class="water"
+                              d="M0 210 C 60 190, 110 230, 170 215 S 280 190, 390 215 L390 240 C 300 220, 220 250, 160 240 S 60 220, 0 235z"
+                            />
+                            <rect class="block" x="12" y="12" width="80" height="58" rx="3" />
+                            <rect class="block" x="104" y="12" width="96" height="58" rx="3" />
+                            <rect class="block" x="212" y="12" width="70" height="58" rx="3" />
+                            <rect class="block" x="294" y="12" width="84" height="58" rx="3" />
+                            <rect class="block" x="12" y="82" width="80" height="50" rx="3" />
+                            <rect class="block" x="104" y="82" width="96" height="50" rx="3" />
+                            <rect class="block" x="212" y="82" width="70" height="50" rx="3" />
+                            <rect class="block" x="294" y="82" width="84" height="50" rx="3" />
+                            <rect class="block" x="12" y="144" width="80" height="40" rx="3" />
+                            <rect class="block" x="104" y="144" width="96" height="40" rx="3" />
+                            <rect class="block" x="212" y="144" width="70" height="40" rx="3" />
+                            <rect class="block" x="294" y="144" width="84" height="40" rx="3" />
+                            <rect class="block" x="12" y="250" width="120" height="40" rx="3" />
+                            <rect class="block" x="144" y="252" width="110" height="38" rx="3" />
+                            <rect class="block" x="266" y="250" width="112" height="40" rx="3" />
+                            <path class="avenue" d="M98 0V300M0 138H390M288 0V300" />
+                            <path
+                              class="line"
+                              d="M98 138 L206 138 L206 76 L288 76 L288 30 L340 30 L340 76 L288 76 L288 138 L340 138 L340 186 L150 186 L150 260"
+                            />
+                            <g class="pin">
+                              <circle cx="98" cy="138" r="12" />
+                              <text x="98" y="142">1</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="206" cy="76" r="12" />
+                              <text x="206" y="80">2</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="288" cy="76" r="12" />
+                              <text x="288" y="80">3</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="340" cy="30" r="12" />
+                              <text x="340" y="34">4</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="340" cy="138" r="12" />
+                              <text x="340" y="142">5</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="206" cy="186" r="12" />
+                              <text x="206" y="190">6</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="150" cy="260" r="12" />
+                              <text x="150" y="264">7</text>
+                            </g>
+                          </svg>
+                          <div class="app-body">
+                            <div class="app-route-sum">
+                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                            </div>
+                            <div class="app-button">Start navigation</div>
+                            <div>
+                              <div translate="no">Supermercado Boa Vista</div>
+                              <div class="app-small app-muted">
+                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="app-gesture"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <h3>Alerts</h3>
+              <p>
+                A notice when a customer falls out of their buying rhythm, drops in volume or has an overdue invoice.
+              </p>
+              <div class="device device--ios" data-device aria-hidden="true">
+                <div class="device-frame">
+                  <span class="device-camera"></span>
+                  <div class="device-screen">
+                    <div class="app">
+                      <div class="app-status">
+                        <span>9:41</span
+                        ><span class="app-status-icons only-ios"
+                          ><svg viewBox="0 0 18 12">
+                            <rect y="8" width="3" height="4" rx=".6" />
+                            <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                            <rect x="10" y="3" width="3" height="9" rx=".6" />
+                            <rect x="15" width="3" height="12" rx=".6" /></svg
+                          ><svg viewBox="0 0 26 12">
+                            <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                            <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                            <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                        ><span class="app-status-icons only-android"
+                          ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                          ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                        ></span>
+                      </div>
+                      <div class="app-views">
+                        <div class="app-view">
+                          <div class="app-top"><span class="app-top-title">Alerts</span></div>
+                          <div class="app-list">
+                            <div class="app-group">Today</div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Mercearia Central dropped 40%</span
+                                  ><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">
+                                  R$ 1,240 on the last order, vs. R$ 2,070 on the one before.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Overdue invoice</span><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">Supermercado Boa Vista · R$ 890 · 12 days late.</div>
+                              </div>
+                            </div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Your briefing is ready</span><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">7 visits today · 2 need attention.</div>
+                              </div>
+                            </div>
+                            <div class="app-group">Yesterday</div>
+                            <div class="app-alert">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Atacadão do Bairro: 78 days without buying</span>
+                                </div>
+                                <div class="app-alert-text">Usually buys every 30 days.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="app-gesture"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <p class="note">Illustrative screens with fictional companies and figures.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="on-your-phone">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="on-your-phone">On iPhone, Android and your computer</h2>
+            <p class="lead">
+              The same app, in the style of each phone. Choose the platform, the theme and the screen. Fictional data.
+            </p>
+          </div>
+          <div class="preview" data-preview>
+            <div class="preview-controls">
+              <div class="preview-pickers">
+                <div class="seg needs-js" role="radiogroup" aria-label="Platform">
+                  <label class="seg-option"
+                    ><input type="radio" name="platform" value="ios" data-pref="platform" /><span>iOS</span></label
+                  ><label class="seg-option"
+                    ><input type="radio" name="platform" value="android" data-pref="platform" /><span
+                      >Android</span
+                    ></label
+                  >
+                </div>
+                <div class="seg needs-js" role="radiogroup" aria-label="Theme">
+                  <label class="seg-option"
+                    ><input type="radio" name="theme-preview" value="light" data-pref="theme" /><span
+                      >Light</span
+                    ></label
+                  ><label class="seg-option"
+                    ><input type="radio" name="theme-preview" value="dark" data-pref="theme" /><span>Dark</span></label
+                  ><label class="seg-option"
+                    ><input type="radio" name="theme-preview" value="system" data-pref="theme" /><span
+                      >System</span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="preview-tabs needs-js" role="tablist" aria-label="App screens">
+                <button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-ask"
+                  aria-controls="panel-ask"
+                  data-tab="ask"
+                  aria-selected="true"
+                >
+                  Ask</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-customers"
+                  aria-controls="panel-customers"
+                  data-tab="customers"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Customers</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-mix"
+                  aria-controls="panel-mix"
+                  data-tab="mix"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Product mix</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-invoices"
+                  aria-controls="panel-invoices"
+                  data-tab="invoices"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Invoices</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-route"
+                  aria-controls="panel-route"
+                  data-tab="route"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Route</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-alerts"
+                  aria-controls="panel-alerts"
+                  data-tab="alerts"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Alerts</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-me"
+                  aria-controls="panel-me"
+                  data-tab="me"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Me</button
+                ><button
+                  class="preview-tab"
+                  type="button"
+                  role="tab"
+                  id="tab-notifications"
+                  aria-controls="panel-notifications"
+                  data-tab="notifications"
+                  aria-selected="false"
+                  tabindex="-1"
+                >
+                  Notifications
+                </button>
+              </div>
+              <div class="preview-chips needs-js" data-chips>
+                <p class="preview-chips-label">Example questions</p>
+                <div class="chips">
+                  <button class="chip" type="button" data-ask-chip="0" aria-pressed="true">
+                    How is Mercadinho São José?</button
+                  ><button class="chip" type="button" data-ask-chip="1" aria-pressed="false">
+                    Who stopped buying this month?</button
+                  ><button class="chip" type="button" data-ask-chip="2" aria-pressed="false">
+                    How far am I from my target?</button
+                  ><button class="chip" type="button" data-ask-chip="3" aria-pressed="false">
+                    What has Mercadinho São José stopped buying?</button
+                  ><button class="chip" type="button" data-ask-chip="4" aria-pressed="false">
+                    Is there an overdue invoice on today’s route?</button
+                  ><button class="chip" type="button" data-ask-chip="5" aria-pressed="false">
+                    How much rice did I sell per month in the last six months?</button
+                  ><button class="chip" type="button" data-ask-chip="6" aria-pressed="false">How is São José?</button>
+                </div>
+              </div>
+            </div>
+            <div class="preview-device">
+              <div class="device device--ios" data-device>
+                <div class="device-frame">
+                  <span class="device-camera"></span>
+                  <div class="device-screen">
+                    <div class="app">
+                      <div class="app-status">
+                        <span>9:41</span
+                        ><span class="app-status-icons only-ios"
+                          ><svg viewBox="0 0 18 12">
+                            <rect y="8" width="3" height="4" rx=".6" />
+                            <rect x="5" y="5.5" width="3" height="6.5" rx=".6" />
+                            <rect x="10" y="3" width="3" height="9" rx=".6" />
+                            <rect x="15" width="3" height="12" rx=".6" /></svg
+                          ><svg viewBox="0 0 26 12">
+                            <rect x=".5" y=".5" width="22" height="11" rx="3" fill="none" stroke="currentColor" />
+                            <rect x="2" y="2" width="17" height="8" rx="1.6" />
+                            <rect x="24" y="4" width="2" height="4" rx="1" /></svg></span
+                        ><span class="app-status-icons only-android"
+                          ><svg viewBox="0 0 14 12"><path d="M0 12 14 0v12z" /></svg
+                          ><svg viewBox="0 0 8 13"><path d="M2.5 0h3v1.5H8V13H0V1.5h2.5z" /></svg
+                        ></span>
+                      </div>
+                      <div class="app-views">
+                        <div
+                          class="app-view"
+                          id="panel-ask"
+                          role="tabpanel"
+                          aria-labelledby="tab-ask"
+                          data-screen="ask"
+                        >
+                          <div class="app-top">
+                            <span class="app-top-title">Ask Ritmo</span
+                            ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                              <circle cx="11" cy="11" r="6.5" />
+                              <path d="m20 20-4-4" />
+                            </svg>
+                          </div>
+                          <div class="app-body">
+                            <div class="app-convo" data-ask="0">
+                              <div class="app-question">How is Mercadinho São José?</div>
+                              <div class="app-card">
+                                <div class="app-card-head" translate="no">Mercadinho São José</div>
+                                <div class="app-card-body">
+                                  <div class="app-facts">
+                                    <div class="app-fact">
+                                      <span class="app-label">Last order</span><span class="app-value">R$ 3,420</span
+                                      ><span class="app-small app-muted">Oct 2</span>
+                                    </div>
+                                    <div class="app-fact">
+                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$ 3,100</span>
+                                    </div>
+                                  </div>
+                                  <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
+                                </div>
+                                <div class="app-card-foot">
+                                  <span>From your company’s data</span><span>Updated 12 min ago</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="app-convo" data-ask="1" hidden>
+                              <div class="app-question">Who stopped buying this month?</div>
+                              <div class="app-reply">
+                                2 customers fell out of rhythm: Mercearia Central (down 40%) and Atacadão do Bairro (78
+                                days without buying).
+                              </div>
+                            </div>
+                            <div class="app-convo" data-ask="2" hidden>
+                              <div class="app-question">How far am I from my target?</div>
+                              <div class="app-card">
+                                <div class="app-card-head">October target</div>
+                                <div class="app-card-body">
+                                  <div class="app-facts">
+                                    <div class="app-fact">
+                                      <span class="app-label">Sold</span><span class="app-value">R$ 184,320</span>
+                                    </div>
+                                    <div class="app-fact">
+                                      <span class="app-label">Left</span><span class="app-value">R$ 51,680</span>
+                                    </div>
+                                  </div>
+                                  <p>You reached 78% of the R$ 236,000 target. 6 days left.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="app-convo" data-ask="3" hidden>
+                              <div class="app-question">What has Mercadinho São José stopped buying?</div>
+                              <div class="app-reply">
+                                Coffee 500 g: bought every 3 weeks, last ordered on Aug 7. Similar customers also buy
+                                wheat flour 1 kg.
+                              </div>
+                            </div>
+                            <div class="app-convo" data-ask="4" hidden>
+                              <div class="app-question">Is there an overdue invoice on today’s route?</div>
+                              <div class="app-reply">Yes. Supermercado Boa Vista, stop 2: R$ 890, 12 days overdue.</div>
+                            </div>
+                            <div class="app-convo" data-ask="5" hidden>
+                              <div class="app-question">How much rice did I sell per month in the last six months?</div>
+                              <div class="app-card">
+                                <div class="app-card-head">Rice · R$ thousand per month</div>
+                                <div class="app-card-body">
+                                  <div class="app-chart">
+                                    <span class="app-bar"><span>4.2</span><i style="--v: 88"></i>May</span
+                                    ><span class="app-bar"><span>3.9</span><i style="--v: 81"></i>Jun</span
+                                    ><span class="app-bar"><span>4.6</span><i style="--v: 96"></i>Jul</span
+                                    ><span class="app-bar"><span>4.1</span><i style="--v: 85"></i>Aug</span
+                                    ><span class="app-bar"><span>4.8</span><i style="--v: 100"></i>Sep</span
+                                    ><span class="app-bar"><span>3.7</span><i style="--v: 77"></i>Oct</span>
+                                  </div>
+                                  <p class="app-small app-muted">Six-month total: R$ 25.3 thousand</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="app-convo" data-ask="6" hidden>
+                              <div class="app-question">How is São José?</div>
+                              <div class="app-reply">Which São José?</div>
+                              <div class="app-options">
+                                <span class="app-option"
+                                  ><b>Mercadinho São José</b
+                                  ><span class="app-small app-muted">São Lourenço da Mata</span></span
+                                ><span class="app-option"
+                                  ><b>Padaria São José</b><span class="app-small app-muted">Recife</span></span
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-composer">
+                            <div class="app-input">Ask about a customer…</div>
+                            <span class="app-send"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12 20 4l-6 16-3-7z" /></svg
+                            ></span>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-customers"
+                          role="tabpanel"
+                          aria-labelledby="tab-customers"
+                          data-screen="customers"
+                          hidden
+                        >
+                          <div class="app-top"><span class="app-top-title">Customers</span></div>
+                          <div class="app-filters">
+                            <span class="app-filter is-on">All</span><span class="app-filter">Stopped</span
+                            ><span class="app-filter">Overdue</span><span class="app-filter">Dropping</span>
+                          </div>
+                          <div class="app-list">
+                            <div class="app-row">
+                              <span class="app-initials">AB</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Atacadão do Bairro</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i
+                                    ><i></i><i></i><i class="m"></i></span
+                                  ><span>78 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">
+                                R$ 5,900<span class="app-chip app-chip--warning">Stopped</span>
+                              </div>
+                            </div>
+                            <div class="app-row">
+                              <span class="app-initials">MS</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Mercadinho São José</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i></i><i class="b"></i><i></i><i class="b"></i><i></i
+                                    ><i class="b"></i><i></i><i class="b"></i><i></i><i></i><i></i></span
+                                  ><span>24 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">
+                                R$ 3,420<span class="app-chip app-chip--positive">↑ +9.8%</span>
+                              </div>
+                            </div>
+                            <div class="app-row">
+                              <span class="app-initials">SB</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Supermercado Boa Vista</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i class="b"></i><i></i><i class="b"></i><i class="b"></i><i></i
+                                    ><i></i><i></i><i class="m"></i><i></i><i class="m"></i><i></i></span
+                                  ><span>52 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">
+                                R$ 2,180<span class="app-chip app-chip--negative">Overdue</span>
+                              </div>
+                            </div>
+                            <div class="app-row">
+                              <span class="app-initials">MC</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Mercearia Central</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i
+                                    ><i class="m"></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i></span
+                                  ><span>61 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">
+                                R$ 1,240<span class="app-chip app-chip--negative">Down 40%</span>
+                              </div>
+                            </div>
+                            <div class="app-row">
+                              <span class="app-initials">PJ</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Padaria São José</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i
+                                    ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i
+                                    ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></span
+                                  ><span>6 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">R$ 980<span class="app-chip">0%</span></div>
+                            </div>
+                            <div class="app-row">
+                              <span class="app-initials">FN</span>
+                              <div class="app-row-main">
+                                <div class="app-row-title" translate="no">Frigorífico Nordeste</div>
+                                <div class="app-row-sub">
+                                  <span class="app-rhythm" aria-hidden="true"
+                                    ><i class="b"></i><i></i><i class="b"></i><i></i><i class="b"></i><i></i
+                                    ><i class="b"></i><i></i><i class="b"></i><i></i><i class="b"></i><i></i></span
+                                  ><span>11 days ago</span>
+                                </div>
+                              </div>
+                              <div class="app-row-end">R$ 4,350<span class="app-chip">0%</span></div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-mix"
+                          role="tabpanel"
+                          aria-labelledby="tab-mix"
+                          data-screen="mix"
+                          hidden
+                        >
+                          <div class="app-top">
+                            <span class="app-back"
+                              ><span class="only-ios app-back-chevron">‹</span><span class="only-ios">Customers</span
+                              ><span class="only-android"
+                                ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M19 12H5M11 6l-6 6 6 6" /></svg></span></span
+                            ><span class="app-top-title" translate="no">Mercadinho São José</span>
+                          </div>
+                          <div class="app-subtabs">
+                            <span>Summary</span><span>Orders</span><span class="is-on">Mix</span><span>Invoices</span>
+                          </div>
+                          <div class="app-body">
+                            <div class="app-box">
+                              <div class="app-box-head"><span>Share of revenue · 6 months</span></div>
+                              <div class="app-mix">
+                                <span>Rice type 1, 5 kg</span
+                                ><span class="app-mix-bar is-top"><i style="--v: 68"></i></span><span>34%</span
+                                ><span>Soybean oil 900 ml</span><span class="app-mix-bar"><i style="--v: 42"></i></span
+                                ><span>21%</span><span>Black beans 1 kg</span
+                                ><span class="app-mix-bar"><i style="--v: 30"></i></span><span>15%</span>
+                              </div>
+                            </div>
+                            <div class="app-box">
+                              <div class="app-box-head">
+                                <span>Coffee 500 g</span
+                                ><span class="app-chip app-chip--warning">Stopped in August</span>
+                              </div>
+                              <span class="app-rhythm" aria-hidden="true"
+                                ><i class="b"></i><i></i><i></i><i class="m"></i><i></i><i></i><i class="m"></i><i></i
+                                ><i></i><i class="m"></i><i></i><i></i
+                              ></span>
+                              <p class="app-small app-muted">Bought every 3 weeks. 340 units in stock.</p>
+                            </div>
+                            <div class="app-box">
+                              <div class="app-box-head">
+                                <span>Wheat flour 1 kg</span><span class="app-chip">Suggestion</span>
+                              </div>
+                              <p class="app-small app-muted">8 of 10 similar customers buy it. In stock.</p>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-invoices"
+                          role="tabpanel"
+                          aria-labelledby="tab-invoices"
+                          data-screen="invoices"
+                          hidden
+                        >
+                          <div class="app-top">
+                            <span class="app-back"
+                              ><span class="only-ios app-back-chevron">‹</span><span class="only-ios">Customers</span
+                              ><span class="only-android"
+                                ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M19 12H5M11 6l-6 6 6 6" /></svg></span></span
+                            ><span class="app-top-title" translate="no">Supermercado Boa Vista</span>
+                          </div>
+                          <div class="app-subtabs">
+                            <span>Summary</span><span>Orders</span><span>Mix</span><span class="is-on">Invoices</span>
+                          </div>
+                          <div class="app-body">
+                            <div class="app-facts">
+                              <div class="app-box">
+                                <span class="app-label">Open</span><span class="app-value">R$ 2,180</span
+                                ><span class="app-small app-muted">3 invoices</span>
+                              </div>
+                              <div class="app-box">
+                                <span class="app-label">Overdue</span><span class="app-value app-negative">R$ 890</span
+                                ><span class="app-small app-muted">1 invoice · 12 days</span>
+                              </div>
+                            </div>
+                            <div class="app-banner">
+                              <strong>Late 3 months in a row.</strong> Consider cash or a shorter term on the next
+                              order.
+                            </div>
+                            <div>
+                              <div class="app-invoice">
+                                <div>
+                                  <div>NF 118204 · 1/2</div>
+                                  <div class="app-small app-muted">Due Oct 14</div>
+                                </div>
+                                <div class="app-invoice-end">
+                                  R$ 890.00<span class="app-chip app-chip--negative">Overdue 12 days</span>
+                                </div>
+                              </div>
+                              <div class="app-invoice">
+                                <div>
+                                  <div>NF 118204 · 2/2</div>
+                                  <div class="app-small app-muted">Due Nov 13</div>
+                                </div>
+                                <div class="app-invoice-end">R$ 890.00<span class="app-chip">Due in 18 days</span></div>
+                              </div>
+                              <div class="app-invoice">
+                                <div>
+                                  <div>NF 118511</div>
+                                  <div class="app-small app-muted">Due Nov 20</div>
+                                </div>
+                                <div class="app-invoice-end">R$ 400.00<span class="app-chip">Due in 25 days</span></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-route"
+                          role="tabpanel"
+                          aria-labelledby="tab-route"
+                          data-screen="route"
+                          hidden
+                        >
+                          <div class="app-top"><span class="app-top-title">Today’s route</span></div>
+                          <svg class="app-map" viewBox="0 0 390 300" aria-hidden="true">
+                            <path
+                              class="water"
+                              d="M0 210 C 60 190, 110 230, 170 215 S 280 190, 390 215 L390 240 C 300 220, 220 250, 160 240 S 60 220, 0 235z"
+                            />
+                            <rect class="block" x="12" y="12" width="80" height="58" rx="3" />
+                            <rect class="block" x="104" y="12" width="96" height="58" rx="3" />
+                            <rect class="block" x="212" y="12" width="70" height="58" rx="3" />
+                            <rect class="block" x="294" y="12" width="84" height="58" rx="3" />
+                            <rect class="block" x="12" y="82" width="80" height="50" rx="3" />
+                            <rect class="block" x="104" y="82" width="96" height="50" rx="3" />
+                            <rect class="block" x="212" y="82" width="70" height="50" rx="3" />
+                            <rect class="block" x="294" y="82" width="84" height="50" rx="3" />
+                            <rect class="block" x="12" y="144" width="80" height="40" rx="3" />
+                            <rect class="block" x="104" y="144" width="96" height="40" rx="3" />
+                            <rect class="block" x="212" y="144" width="70" height="40" rx="3" />
+                            <rect class="block" x="294" y="144" width="84" height="40" rx="3" />
+                            <rect class="block" x="12" y="250" width="120" height="40" rx="3" />
+                            <rect class="block" x="144" y="252" width="110" height="38" rx="3" />
+                            <rect class="block" x="266" y="250" width="112" height="40" rx="3" />
+                            <path class="avenue" d="M98 0V300M0 138H390M288 0V300" />
+                            <path
+                              class="line"
+                              d="M98 138 L206 138 L206 76 L288 76 L288 30 L340 30 L340 76 L288 76 L288 138 L340 138 L340 186 L150 186 L150 260"
+                            />
+                            <g class="pin">
+                              <circle cx="98" cy="138" r="12" />
+                              <text x="98" y="142">1</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="206" cy="76" r="12" />
+                              <text x="206" y="80">2</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="288" cy="76" r="12" />
+                              <text x="288" y="80">3</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="340" cy="30" r="12" />
+                              <text x="340" y="34">4</text>
+                            </g>
+                            <g class="pin pin--alert">
+                              <circle cx="340" cy="138" r="12" />
+                              <text x="340" y="142">5</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="206" cy="186" r="12" />
+                              <text x="206" y="190">6</text>
+                            </g>
+                            <g class="pin">
+                              <circle cx="150" cy="260" r="12" />
+                              <text x="150" y="264">7</text>
+                            </g>
+                          </svg>
+                          <div class="app-body">
+                            <div class="app-route-sum">
+                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                            </div>
+                            <div class="app-button">Start navigation</div>
+                            <div>
+                              <div translate="no">Supermercado Boa Vista</div>
+                              <div class="app-small app-muted">
+                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-alerts"
+                          role="tabpanel"
+                          aria-labelledby="tab-alerts"
+                          data-screen="alerts"
+                          hidden
+                        >
+                          <div class="app-top"><span class="app-top-title">Alerts</span></div>
+                          <div class="app-list">
+                            <div class="app-group">Today</div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Mercearia Central dropped 40%</span
+                                  ><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">
+                                  R$ 1,240 on the last order, vs. R$ 2,070 on the one before.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Overdue invoice</span><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">Supermercado Boa Vista · R$ 890 · 12 days late.</div>
+                              </div>
+                            </div>
+                            <div class="app-alert is-unread">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Your briefing is ready</span><span class="app-small app-muted">07:00</span>
+                                </div>
+                                <div class="app-alert-text">7 visits today · 2 need attention.</div>
+                              </div>
+                            </div>
+                            <div class="app-group">Yesterday</div>
+                            <div class="app-alert">
+                              <div class="app-alert-main">
+                                <div class="app-alert-head">
+                                  <span>Atacadão do Bairro: 78 days without buying</span>
+                                </div>
+                                <div class="app-alert-text">Usually buys every 30 days.</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-me"
+                          role="tabpanel"
+                          aria-labelledby="tab-me"
+                          data-screen="me"
+                          hidden
+                        >
+                          <div class="app-top"><span class="app-top-title">Me</span></div>
+                          <div class="app-kpis">
+                            <div class="app-fact">
+                              <span class="app-label">October</span><span class="app-value">R$ 184K</span>
+                            </div>
+                            <div class="app-fact">
+                              <span class="app-label">Target</span><span class="app-value">78%</span>
+                            </div>
+                            <div class="app-fact">
+                              <span class="app-label">Customers</span><span class="app-value">48</span>
+                            </div>
+                          </div>
+                          <div class="app-list">
+                            <div class="app-group">Preferences</div>
+                            <div class="app-setting"><span>Morning briefing</span><span class="app-switch"></span></div>
+                            <div class="app-setting">
+                              <span>Language</span><span class="app-setting-value">English</span>
+                            </div>
+                            <div class="app-group">Appearance</div>
+                            <div class="app-setting">
+                              <span>Light</span><span class="only-ios app-check"></span
+                              ><span class="only-android app-radio"></span>
+                            </div>
+                            <div class="app-setting">
+                              <span>Dark</span><span class="only-ios app-check"></span
+                              ><span class="only-android app-radio"></span>
+                            </div>
+                            <div class="app-setting">
+                              <span>System</span
+                              ><span class="only-ios app-check"
+                                ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="m5 13 4 4L19 7" /></svg></span
+                              ><span class="only-android app-radio is-on"></span>
+                            </div>
+                            <button class="app-signout" type="button" data-signout>Sign out</button>
+                          </div>
+                          <div class="app-tabs">
+                            <span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5h16v11H9l-5 4z" /></svg
+                              >Ask</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="9" cy="8" r="3.5" />
+                                <path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5" />
+                                <path d="M16 4.5a3.5 3.5 0 0 1 0 7" />
+                                <path d="M18 14.8c2 .7 3.2 2.5 3.5 5.2" /></svg
+                              >Customers</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2z" />
+                                <path d="M9 4v14M15 6v14" /></svg
+                              >Route</span
+                            ><span class="app-tab"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z" />
+                                <path d="M10 20a2 2 0 0 0 4 0" /></svg
+                              >Alerts<span class="app-badge">3</span></span
+                            ><span class="app-tab is-current"
+                              ><svg class="app-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4" />
+                                <path d="M4 21c1-4.5 4.2-7 8-7s7 2.5 8 7" /></svg
+                              >Me</span
+                            >
+                          </div>
+                          <div class="app-confirm" data-confirm hidden>
+                            <div class="app-sheet" role="dialog" aria-label="Sign out?">
+                              <p><strong>Sign out?</strong></p>
+                              <p class="app-muted">A sample confirmation. Nothing happens here.</p>
+                              <div class="app-sheet-actions">
+                                <button type="button">Cancel</button
+                                ><button class="is-danger" type="button">Sign out</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="app-toast only-android" data-toast hidden>Just a sample</div>
+                        </div>
+                        <div
+                          class="app-view"
+                          id="panel-notifications"
+                          role="tabpanel"
+                          aria-labelledby="tab-notifications"
+                          data-screen="notifications"
+                          hidden
+                        >
+                          <div class="app-lock app-lock--list">
+                            <div class="only-android app-shade-title">Notifications</div>
+                            <div class="app-clock only-ios">9:41</div>
+                            <div class="app-date only-ios">Monday, October 26</div>
+                            <div class="app-notice">
+                              <svg class="app-notice-mark app-mark" viewBox="0 0 64 64" aria-hidden="true">
+                                <rect class="tile" width="64" height="64" rx="15" />
+                                <polyline class="line" points="16,46 27,31 39,38 48,19" />
+                                <circle class="stop" cx="16" cy="46" r="3.5" />
+                                <circle class="stop" cx="27" cy="31" r="3.5" />
+                                <circle class="stop" cx="39" cy="38" r="3.5" />
+                                <circle class="ring" cx="48" cy="19" r="5" />
+                              </svg>
+                              <div class="app-notice-main">
+                                <div class="app-notice-head"><span translate="no">Ritmo</span><span>07:00</span></div>
+                                <div class="app-notice-title">Your briefing is ready</div>
+                                <div class="app-notice-text">7 visits today · 2 need attention</div>
+                              </div>
+                            </div>
+                            <div class="app-notice">
+                              <svg class="app-notice-mark app-mark" viewBox="0 0 64 64" aria-hidden="true">
+                                <rect class="tile" width="64" height="64" rx="15" />
+                                <polyline class="line" points="16,46 27,31 39,38 48,19" />
+                                <circle class="stop" cx="16" cy="46" r="3.5" />
+                                <circle class="stop" cx="27" cy="31" r="3.5" />
+                                <circle class="stop" cx="39" cy="38" r="3.5" />
+                                <circle class="ring" cx="48" cy="19" r="5" />
+                              </svg>
+                              <div class="app-notice-main">
+                                <div class="app-notice-head"><span translate="no">Ritmo</span><span>07:00</span></div>
+                                <div class="app-notice-title">Mercearia Central dropped 40%</div>
+                                <div class="app-notice-text">From R$ 2,070 to R$ 1,240 on the last order.</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="app-gesture"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="devices">
+            <figure>
+              <div class="frame frame--laptop">
+                <picture
+                  ><source srcset="../assets/screens/en/WebPortal-dark.webp" media="(prefers-color-scheme: dark)" />
+                  <img
+                    src="../assets/screens/en/WebPortal-light.webp"
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Manager’s dashboard on a laptop: the month’s results and the sales team table."
+                /></picture>
+              </div>
+              <div class="laptop-base"></div>
+              <figcaption>Laptop: the manager’s dashboard.</figcaption>
+            </figure>
+            <figure>
+              <div class="frame frame--tablet">
+                <picture
+                  ><source srcset="../assets/screens/en/TabletLayout-dark.webp" media="(prefers-color-scheme: dark)" />
+                  <img
+                    src="../assets/screens/en/TabletLayout-light.webp"
+                    width="1024"
+                    height="700"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Tablet with the customer list on the left and the chosen customer’s details on the right."
+                /></picture>
+              </div>
+              <figcaption>Tablet: list and detail side by side.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="whatsapp">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="whatsapp">Also on WhatsApp</h2>
+            <p class="lead">
+              Nothing to install: the question, the 07:00 briefing and the alert, with reply buttons. An example with
+              fictional data.
+            </p>
+          </div>
+          <div class="wa-grid">
+            <figure>
+              <div class="wa">
+                <div class="wa-msg wa-msg--out">How is Mercadinho São José?</div>
+                <div class="wa-msg">
+                  <b>Mercadinho São José</b><br />Last order: <b>R$ 3,420</b> on Oct 2.<br />No coffee since August.<br /><span
+                    class="wa-muted"
+                    >Updated 12 min ago</span
+                  >
+                </div>
+                <div class="wa-buttons">
+                  <span class="wa-button">See product mix</span><span class="wa-button">Open invoices</span>
+                </div>
+              </div>
+              <figcaption>The conversation</figcaption>
+            </figure>
+            <figure>
+              <div class="wa">
+                <div class="wa-msg">
+                  <b>Good morning, Ana.</b> You have 7 visits today.<br />Supermercado Boa Vista: R$ 890 invoice
+                  overdue.<br />Mercearia Central: down 40%.
+                </div>
+                <div class="wa-buttons">
+                  <span class="wa-button">See route</span><span class="wa-button">Ask Ritmo</span>
+                </div>
+              </div>
+              <figcaption>The 07:00 briefing</figcaption>
+            </figure>
+            <figure>
+              <div class="wa">
+                <div class="wa-msg"><b>Mercearia Central</b> dropped 40%. Last order: Aug 26.</div>
+                <div class="wa-buttons"><span class="wa-button">See customer</span></div>
+              </div>
+              <figcaption>The alert</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="calculator">
+        <div class="wrap calc-grid">
+          <div class="section-head">
+            <h2 id="calculator">How much you lose with stopped customers</h2>
+            <p class="lead">Do the math with your own portfolio. It runs only in your browser and sends nothing.</p>
+          </div>
+          <form
+            class="calc needs-js"
+            data-calc
+            data-share="{percent}% of the portfolio has stopped."
+            data-too-many="Stopped customers cannot exceed active customers."
+          >
+            <label
+              >Active customers<input
+                name="active"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                step="1"
+                value="100"
+                autocomplete="off"
+            /></label>
+            <label
+              >Average ticket in R$<input
+                name="ticket"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                step="1"
+                value="3100"
+                autocomplete="off"
+            /></label>
+            <label
+              >How many have stopped<input
+                name="stopped"
+                type="number"
+                inputmode="numeric"
+                min="0"
+                step="1"
+                value="6"
+                autocomplete="off"
+            /></label>
+            <div class="calc-result">
+              <span>At risk per month</span><output aria-live="polite">—</output>
+              <p data-calc-share></p>
+            </div>
+            <p class="calc-explain">
+              The math: stopped customers × average ticket, assuming one order per month from each customer. It is an
+              estimate. The starting values are only an example; replace them with yours.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="why-trust">
+        <div class="wrap">
+          <div class="section-head"><h2 id="why-trust">Why trust it</h2></div>
+          <ul class="statements statements--three">
+            <li class="statement">
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-database" /></svg
+              ></span>
+              <h3>The figure comes from the ERP, not the AI</h3>
+              <p>
+                Artificial intelligence understands the question and writes the sentence. Ritmo gets the figure straight
+                from your company’s system and shows where it came from and when it was updated.
+              </p>
+            </li>
+            <li class="statement">
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-eye" /></svg
+              ></span>
+              <h3>Read-only in the first version</h3>
+              <p>Ritmo reads data. It does not create, change or delete anything in your company’s system.</p>
+            </li>
+            <li class="statement">
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-users" /></svg
+              ></span>
+              <h3>Everyone sees only what is theirs</h3>
+              <p>Each company sees only its own data, and each seller sees only their own portfolio.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="security">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="security">Security and privacy</h2>
+            <p class="lead">
+              These are project requirements, tested as the product is built. Ritmo does not hold any certifications
+              yet.
+            </p>
+          </div>
+          <ul class="safeguards">
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-users" /></svg
+              ></span>
+              <div>
+                <h3>Isolation per company</h3>
+                <p>One company’s data does not mix with another’s.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-key" /></svg
+              ></span>
+              <div>
+                <h3>Sign in without a password</h3>
+                <p>
+                  Sign in with your fingerprint, your face or a code sent to your phone. There is no password to leak or
+                  forget.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-lock" /></svg
+              ></span>
+              <div>
+                <h3>Protected data</h3>
+                <p>Your data travels and stays stored protected (encrypted).</p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-file" /></svg
+              ></span>
+              <div>
+                <h3>LGPD, Brazil’s data protection law</h3>
+                <p>
+                  Your company decides about the data, and we sign a data protection agreement before receiving any real
+                  information. Part of the service uses companies outside Brazil, listed in that agreement.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="icon-box"
+                ><svg class="i" aria-hidden="true"><use href="#i-eyeoff" /></svg
+              ></span>
+              <div>
+                <h3>No route tracking</h3>
+                <p>
+                  Location is used only while the route is open. Ritmo records the visit, with the customer and the
+                  time, but not the path travelled.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="pilot">
+        <div class="wrap">
+          <div class="section-head">
+            <h2 id="pilot">How the pilot works</h2>
+            <p class="lead">In development, looking for companies that want to test it and help shape the product.</p>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>A conversation</h3>
+              <p>We learn how your team sells and which information it misses most.</p>
+            </li>
+            <li>
+              <h3>Data protection agreement</h3>
+              <p>We sign the agreement before any real data.</p>
+            </li>
+            <li>
+              <h3>A test with a few sellers</h3>
+              <p>A few sellers use Ritmo in their daily work.</p>
+            </li>
+            <li>
+              <h3>You help shape it</h3>
+              <p>Your team’s feedback decides what to improve.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="questions">
+        <div class="wrap faq-grid">
+          <div class="faq-intro">
+            <h2 id="questions">Frequently asked questions</h2>
+            <p class="lead">Did not find your question? <a href="#contact">Talk to us</a>.</p>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>
+                Does it work with my ERP?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>We are starting with the ERPs of the pilot companies. We also accept spreadsheets.</p>
+            </details>
+            <details>
+              <summary>
+                How much does it cost?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>The price is being set together with the pilot companies.</p>
+            </details>
+            <details>
+              <summary>
+                Do I need to install anything?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>WhatsApp already works. The app is optional.</p>
+            </details>
+            <details>
+              <summary>
+                Is my data safe?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>
+                Security is a project requirement: each company sees only its own data, each seller only their own
+                portfolio, with no passwords and with encrypted data. We sign a data protection agreement before
+                receiving any real data. Ritmo is still under construction and holds no certifications.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Does it work offline?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>The first version needs a signal. An offline mode is on the plan.</p>
+            </details>
+            <details>
+              <summary>
+                Do I need to change systems?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
+              </summary>
+              <p>No. Ritmo reads data from the system your company already uses and changes nothing in it.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--band" aria-labelledby="who-we-are">
+        <div class="wrap about">
+          <div class="about-mark">
+            <svg viewBox="0 0 1080 1080" width="120" height="120" aria-hidden="true">
+              <circle class="zero-ring" cx="540" cy="540" r="122" />
+              <circle class="zero-dot" cx="540" cy="540" r="37" />
+              <path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54" />
+            </svg>
+          </div>
+          <div>
+            <h2 id="who-we-are">Who we are</h2>
+            <p class="lead">
+              Marco Zero Labs is a software studio from Pernambuco, Brazil: three developers and a sales specialist. The
+              name comes from Recife’s Marco Zero, the point from which distances are measured.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" aria-labelledby="contact">
+        <div class="wrap">
+          <div class="contact-panel">
+            <svg class="route" viewBox="0 0 520 520" aria-hidden="true">
+              <polyline class="path" points="20,500 140,330 270,400 380,190 480,60" />
+              <circle class="stop" cx="140" cy="330" r="8" />
+              <circle class="stop" cx="270" cy="400" r="8" />
+              <circle class="stop" cx="380" cy="190" r="8" />
+              <circle class="ring" cx="480" cy="60" r="15" />
+            </svg>
+            <h2 id="contact">Want to test Ritmo at your company?</h2>
+            <p>Tell us how your team sells and which system you use.</p>
+            <div class="actions">
+              <a
+                class="button button--inverse"
+                href="https://wa.me/5581988980089?text=Hello!%20I%20saw%20the%20Ritmo%20site%20and%20want%20to%20know%20about%20the%20pilot."
+                ><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Message us on WhatsApp</a
+              >
+              <a class="button button--inverse-outline" href="mailto:marcozerolabs@gmail.com?subject=Ritmo%20pilot"
+                ><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg>Send an email</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <p class="signature">
+              <svg viewBox="0 0 1080 1080" width="28" height="28" aria-hidden="true">
+                <rect class="zero-tile" width="1080" height="1080" rx="240" />
+                <circle class="zero-ring" cx="540" cy="540" r="122" />
+                <circle class="zero-dot" cx="540" cy="540" r="37" />
+                <path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54" /></svg
+              ><span translate="no">a marco zero labs product</span>
+            </p>
+            <p>A software studio from Pernambuco, creating Ritmo.</p>
+          </div>
+          <nav aria-label="Footer">
+            <h2>Product</h2>
+            <ul>
+              <li><a href="#how-it-works">How it works</a></li>
+              <li><a href="#on-your-phone">On your phone</a></li>
+              <li><a href="#security">Security</a></li>
+              <li><a href="#pilot">Pilot</a></li>
+              <li><a href="#questions">Questions</a></li>
+            </ul>
+          </nav>
+          <div>
+            <h2>Contact</h2>
+            <ul>
+              <li><a href="mailto:marcozerolabs@gmail.com?subject=Ritmo%20pilot">marcozerolabs@gmail.com</a></li>
+              <li>
+                <a
+                  href="https://wa.me/5581988980089?text=Hello!%20I%20saw%20the%20Ritmo%20site%20and%20want%20to%20know%20about%20the%20pilot."
+                  >WhatsApp</a
+                >
+              </li>
+              <li><a href="https://www.instagram.com/marcozerolabs/">Instagram @marcozerolabs</a></li>
+              <li><a href="../" lang="pt-BR" hreflang="pt-BR">Português</a></li>
+              <li><a href="./" lang="en" hreflang="en">English</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="legal">© 2026 Marco Zero Labs. This site uses no cookies and collects no browsing data.</p>
       </div>
-      <p class="legal">© 2026 Marco Zero Labs. This site uses no cookies and collects no browsing data.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

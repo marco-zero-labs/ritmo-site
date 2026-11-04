@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "node scripts/serve.mjs",
     "screenshots": "node scripts/screenshots.mjs",
-    "a11y": "node scripts/a11y.mjs"
+    "a11y": "node scripts/a11y.mjs",
+    "record": "node scripts/record-demo.mjs"
   },
   "devDependencies": {
     "axe-core": "4.11.0",
