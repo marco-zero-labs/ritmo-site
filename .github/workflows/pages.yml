@@ -25,6 +25,7 @@ jobs:
           mkdir -p _site/en
           cp index.html _site/
           cp en/index.html _site/en/
+          cp robots.txt sitemap.xml manifest.webmanifest _site/
           cp -r assets _site/
       - uses: actions/upload-pages-artifact@v5
         with:

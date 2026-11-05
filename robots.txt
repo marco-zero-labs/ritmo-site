@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marco-zero-labs.github.io/ritmo-site/sitemap.xml

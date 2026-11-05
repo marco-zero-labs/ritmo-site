@@ -1,0 +1,11 @@
+{
+  "name": "Ritmo",
+  "short_name": "Ritmo",
+  "description": "O copiloto de vendas de quem vende na rua.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#f7f7f5",
+  "theme_color": "#0d5c6b",
+  "icons": [{ "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
