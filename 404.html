@@ -1,0 +1,45 @@
+<!doctype html>
+<!-- GitHub Pages serves this file for any missing address, at any depth, so every path here
+     is absolute. TODO: if the site moves to its own domain, remove /ritmo-site from the paths. -->
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página não encontrada · Ritmo</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1b19" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/ritmo-site/assets/icons/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/ritmo-site/assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/ritmo-site/assets/icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/ritmo-site/assets/css/tokens.css" />
+    <link rel="stylesheet" href="/ritmo-site/assets/css/site.css" />
+    <script src="/ritmo-site/assets/theme.js"></script>
+    <script>
+      // Shows one language. Without JavaScript, both stay on the page.
+      document.addEventListener('DOMContentLoaded', function () {
+        var inEnglishSite = location.pathname.indexOf('/ritmo-site/en/') === 0;
+        var portuguese = !inEnglishSite && (navigator.language || '').toLowerCase().indexOf('pt') === 0;
+        document.documentElement.lang = portuguese ? 'pt-BR' : 'en';
+        document.title = portuguese ? 'Página não encontrada · Ritmo' : 'Page not found · Ritmo';
+        document.querySelector('[data-language="' + (portuguese ? 'en' : 'pt') + '"]').hidden = true;
+      });
+    </script>
+  </head>
+  <body>
+    <main id="conteudo" class="section not-found">
+      <div class="wrap">
+        <div data-language="pt" lang="pt-BR">
+          <h1>Esta página não existe</h1>
+          <p class="lead">O endereço pode ter mudado ou ter sido digitado errado.</p>
+          <p><a class="button button--primary" href="/ritmo-site/">Ir para a página inicial</a></p>
+        </div>
+        <div data-language="en" lang="en">
+          <h1>This page does not exist</h1>
+          <p class="lead">The address may have changed or been mistyped.</p>
+          <p><a class="button button--primary" href="/ritmo-site/en/">Go to the home page</a></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

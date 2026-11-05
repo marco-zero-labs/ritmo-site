@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#1b1b19" media="(prefers-color-scheme: dark)" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:site_name" content="Ritmo" />
     <meta property="og:title" content="Ritmo · O copiloto de vendas de quem vende na rua" />
     <meta
@@ -23,13 +24,15 @@
       content="Chegue em cada visita sabendo o que vender, com os dados da sua empresa, alertas e a rota do dia. Em desenvolvimento, buscando empresas piloto."
     />
     <meta property="og:url" content="https://marco-zero-labs.github.io/ritmo-site/" />
-    <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og-image-pt-BR.png" />
+    <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og/ritmo-pt-BR.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Marca do Ritmo e o título O copiloto de vendas de quem vende na rua." />
+    <meta property="og:image:alt" content="Símbolo da Marco Zero Labs, o nome Ritmo e a frase O copiloto de vendas de quem vende na rua." />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link
       rel="preload"
       href="assets/fonts/ibm-plex-sans-latin-600-normal.woff2"
@@ -48,10 +51,19 @@
     <link rel="stylesheet" href="assets/css/site.css" />
     <link rel="stylesheet" href="assets/css/device.css" />
     <link rel="stylesheet" href="assets/css/demo.css" />
+    <script src="assets/device.js"></script>
     <script src="assets/theme.js"></script>
     <script src="assets/menu.js" defer></script>
     <script src="assets/demo.js" defer></script>
+    <script src="assets/contact.js" defer></script>
     <script src="assets/site.js" defer></script>
+    <!-- TODO: metrics without cookies. Off until configured; keep only the one you choose, set
+         data-domain, and update the metrics line in the privacy pages.
+    Plausible:
+    <script defer data-domain="TODO-your-domain" src="https://plausible.io/js/script.js"></script>
+    Umami:
+    <script defer data-website-id="TODO-website-id" src="https://TODO-your-umami-host/script.js"></script>
+    -->
   </head>
   <body>
     <svg class="sprite" aria-hidden="true">
@@ -237,7 +249,7 @@
             <div class="actions">
               <a
                 class="button button--primary"
-                href="https://wa.me/5581988980089?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ritmo%20e%20quero%20saber%20sobre%20o%20piloto."
+                href="#contato" data-whatsapp-cta
                 ><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Quero ser empresa piloto</a
               >
               <a class="button button--secondary" href="#como-funciona">Ver como funciona</a>
@@ -264,7 +276,7 @@
             </button>
             <p class="visually-hidden">
               Demonstração em 8 cenas: o vendedor recebe o resumo do dia, pergunta como está um cliente, vê que o número
-              vem do ERP, escolhe entre dois clientes parecidos, faz a mesma pergunta no WhatsApp, abre a rota com 14 km
+              vem do ERP, escolhe entre dois clientes parecidos, faz a mesma pergunta no WhatsApp, abre a rota com 14&nbsp;km
               a menos e recebe um alerta de boleto vencido.
             </p>
             <div class="device device--ios" data-device aria-hidden="true">
@@ -696,14 +708,14 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 paradas · 38 km</span
-                              ><span class="app-chip app-chip--positive">14 km a menos</span>
+                              <span>7 paradas · 38&nbsp;km</span
+                              ><span class="app-chip app-chip--positive">14&nbsp;km a menos</span>
                             </div>
                             <div class="app-button">Iniciar navegação</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Abre às 09:00 · <span class="app-negative">vencido R$ 890</span>
+                                Abre às 09:00 · <span class="app-negative">vencido R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -771,7 +783,7 @@
                               <div class="app-notice-main">
                                 <div class="app-notice-head"><span translate="no">Ritmo</span><span>agora</span></div>
                                 <div class="app-notice-title">Supermercado Boa Vista tem boleto vencido</div>
-                                <div class="app-notice-text">R$ 890 · 12 dias</div>
+                                <div class="app-notice-text">R$&nbsp;890 · 12&nbsp;dias</div>
                               </div>
                             </div>
                           </div>
@@ -861,29 +873,31 @@
 
       <section class="section" aria-labelledby="problema">
         <div class="wrap">
-          <div class="section-head"><h2 id="problema">A informação existe, mas não chega a quem está na rua</h2></div>
+          <div class="section-head">
+            <h2 id="problema">A informação existe, mas não chega a quem está na rua</h2>
+            <p class="lead">Exemplos com dados fictícios.</p>
+          </div>
           <ul class="day">
             <li>
               <p class="when">
                 <svg class="i" aria-hidden="true"><use href="#i-clock" /></svg>Antes da visita
               </p>
               <p>
-                Você chega no cliente sem saber o último pedido, o que ele parou de comprar ou se tem boleto vencido.
+                Você chega no Mercadinho São José sem lembrar que ele não compra há 24&nbsp;dias e costuma comprar a cada 14.
               </p>
             </li>
             <li>
               <p class="when">
                 <svg class="i" aria-hidden="true"><use href="#i-pin" /></svg>Na rota
               </p>
-              <p>Uma consulta simples vira ligação ou áudio para o escritório, e a resposta demora a chegar.</p>
+              <p>Para saber se o Supermercado Boa Vista tem boleto vencido, você liga para o escritório ou manda áudio, e a resposta chega depois da visita.</p>
             </li>
             <li>
               <p class="when">
                 <svg class="i" aria-hidden="true"><use href="#i-calendar" /></svg>No fim do mês
               </p>
               <p>
-                O gestor só vê o resultado quando já é tarde para agir, e tem cliente que para de comprar sem ninguém
-                notar.
+                O gestor só descobre no fechamento que a Mercearia Central caiu 40%, quando já é tarde para agir.
               </p>
             </li>
           </ul>
@@ -1048,17 +1062,17 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Último pedido</span><span class="app-value">R$ 3.420</span
+                                      <span class="app-label">Último pedido</span><span class="app-value">R$&nbsp;3.420</span
                                       ><span class="app-small app-muted">2 de out.</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Ticket médio</span><span class="app-value">R$ 3.100</span>
+                                      <span class="app-label">Ticket médio</span><span class="app-value">R$&nbsp;3.100</span>
                                     </div>
                                   </div>
                                   <p>Compra arroz, feijão e óleo a cada duas semanas. Sem café desde agosto.</p>
                                 </div>
                                 <div class="app-card-foot">
-                                  <span>Dos dados da sua empresa</span><span>Atualizado há 12 min</span>
+                                  <span>Dos dados da sua empresa</span><span>Atualizado há 12&nbsp;min</span>
                                 </div>
                               </div>
                             </div>
@@ -1191,14 +1205,14 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 paradas · 38 km</span
-                              ><span class="app-chip app-chip--positive">14 km a menos</span>
+                              <span>7 paradas · 38&nbsp;km</span
+                              ><span class="app-chip app-chip--positive">14&nbsp;km a menos</span>
                             </div>
                             <div class="app-button">Iniciar navegação</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Abre às 09:00 · <span class="app-negative">vencido R$ 890</span>
+                                Abre às 09:00 · <span class="app-negative">vencido R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -1241,7 +1255,7 @@
             </article>
             <article>
               <h3>Alertas</h3>
-              <p>Um aviso quando um cliente sai do ritmo de compra, cai de volume ou tem boleto vencido.</p>
+              <p>Um aviso quando um cliente sai do ritmo de compra, cai de volume ou tem boleto vencido. Exemplo fictício: “Mercadinho São José não compra há 24 dias; costuma comprar a cada 14.”</p>
               <div class="device device--ios" data-device aria-hidden="true">
                 <div class="device-frame">
                   <span class="device-camera"></span>
@@ -1299,7 +1313,7 @@
                             <div class="app-group">Ontem</div>
                             <div class="app-alert">
                               <div class="app-alert-main">
-                                <div class="app-alert-head"><span>Atacadão do Bairro: 78 dias sem comprar</span></div>
+                                <div class="app-alert-head"><span>Atacado do Bairro: 78 dias sem comprar</span></div>
                                 <div class="app-alert-text">Costuma comprar a cada 30 dias.</div>
                               </div>
                             </div>
@@ -1357,15 +1371,6 @@
           <div class="preview" data-preview>
             <div class="preview-controls">
               <div class="preview-pickers">
-                <div class="seg needs-js" role="radiogroup" aria-label="Plataforma">
-                  <label class="seg-option"
-                    ><input type="radio" name="platform" value="ios" data-pref="platform" /><span>iOS</span></label
-                  ><label class="seg-option"
-                    ><input type="radio" name="platform" value="android" data-pref="platform" /><span
-                      >Android</span
-                    ></label
-                  >
-                </div>
                 <div class="seg needs-js" role="radiogroup" aria-label="Tema">
                   <label class="seg-option"
                     ><input type="radio" name="theme-preview" value="light" data-pref="theme" /><span
@@ -1493,7 +1498,11 @@
                 </div>
               </div>
             </div>
-            <div class="preview-device">
+            <div class="preview-device" data-reveal>
+              <div class="seg needs-js device-switch" role="group" aria-label="Aparelho">
+                <button class="seg-button" type="button" data-pref-button="platform" data-value="ios" aria-pressed="false">iPhone</button
+                ><button class="seg-button" type="button" data-pref-button="platform" data-value="android" aria-pressed="false">Android</button>
+              </div>
               <div class="device device--ios" data-device>
                 <div class="device-frame">
                   <span class="device-camera"></span>
@@ -1539,24 +1548,24 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Último pedido</span><span class="app-value">R$ 3.420</span
+                                      <span class="app-label">Último pedido</span><span class="app-value">R$&nbsp;3.420</span
                                       ><span class="app-small app-muted">2 de out.</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Ticket médio</span><span class="app-value">R$ 3.100</span>
+                                      <span class="app-label">Ticket médio</span><span class="app-value">R$&nbsp;3.100</span>
                                     </div>
                                   </div>
                                   <p>Compra arroz, feijão e óleo a cada duas semanas. Sem café desde agosto.</p>
                                 </div>
                                 <div class="app-card-foot">
-                                  <span>Dos dados da sua empresa</span><span>Atualizado há 12 min</span>
+                                  <span>Dos dados da sua empresa</span><span>Atualizado há 12&nbsp;min</span>
                                 </div>
                               </div>
                             </div>
                             <div class="app-convo" data-ask="1" hidden>
                               <div class="app-question">Quem parou de comprar este mês?</div>
                               <div class="app-reply">
-                                2 clientes saíram do ritmo: Mercearia Central (caiu 40%) e Atacadão do Bairro (78 dias
+                                2 clientes saíram do ritmo: Mercearia Central (caiu 40%) e Atacado do Bairro (78&nbsp;dias
                                 sem comprar).
                               </div>
                             </div>
@@ -1567,27 +1576,27 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Vendido</span><span class="app-value">R$ 184.320</span>
+                                      <span class="app-label">Vendido</span><span class="app-value">R$&nbsp;184.320</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Falta</span><span class="app-value">R$ 51.680</span>
+                                      <span class="app-label">Falta</span><span class="app-value">R$&nbsp;51.680</span>
                                     </div>
                                   </div>
-                                  <p>Você chegou a 78% da meta de R$ 236.000. Faltam 6 dias.</p>
+                                  <p>Você chegou a 78% da meta de R$&nbsp;236.000. Faltam 6&nbsp;dias.</p>
                                 </div>
                               </div>
                             </div>
                             <div class="app-convo" data-ask="3" hidden>
                               <div class="app-question">O que o Mercadinho São José não leva mais?</div>
                               <div class="app-reply">
-                                Café 500 g: comprava a cada 3 semanas, e o último pedido foi em 7 de ago. Clientes
+                                Café 500 g: comprava a cada 3&nbsp;semanas, e o último pedido foi em 7 de ago. Clientes
                                 parecidos também levam farinha de trigo 1 kg.
                               </div>
                             </div>
                             <div class="app-convo" data-ask="4" hidden>
                               <div class="app-question">Tem boleto vencido na rota de hoje?</div>
                               <div class="app-reply">
-                                Sim. Supermercado Boa Vista, parada 2: R$ 890, vencido há 12 dias.
+                                Sim. Supermercado Boa Vista, parada 2: R$&nbsp;890, vencido há 12&nbsp;dias.
                               </div>
                             </div>
                             <div class="app-convo" data-ask="5" hidden>
@@ -1603,7 +1612,7 @@
                                     ><span class="app-bar"><span>4,8</span><i style="--v: 100"></i>set</span
                                     ><span class="app-bar"><span>3,7</span><i style="--v: 77"></i>out</span>
                                   </div>
-                                  <p class="app-small app-muted">Total no semestre: R$ 25,3 mil</p>
+                                  <p class="app-small app-muted">Total no semestre: R$&nbsp;25,3 mil</p>
                                 </div>
                               </div>
                             </div>
@@ -1674,7 +1683,7 @@
                             <div class="app-row">
                               <span class="app-initials">AB</span>
                               <div class="app-row-main">
-                                <div class="app-row-title" translate="no">Atacadão do Bairro</div>
+                                <div class="app-row-title" translate="no">Atacado do Bairro</div>
                                 <div class="app-row-sub">
                                   <span class="app-rhythm" aria-hidden="true"
                                     ><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i
@@ -1724,7 +1733,7 @@
                                   <span class="app-rhythm" aria-hidden="true"
                                     ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i
                                     ><i class="m"></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i></span
-                                  ><span>há 61 dias</span>
+                                  ><span>há 14 dias</span>
                                 </div>
                               </div>
                               <div class="app-row-end">
@@ -1810,7 +1819,7 @@
                           </div>
                           <div class="app-body">
                             <div class="app-box">
-                              <div class="app-box-head"><span>Parte do faturamento · 6 meses</span></div>
+                              <div class="app-box-head"><span>Parte do faturamento · 6&nbsp;meses</span></div>
                               <div class="app-mix">
                                 <span>Arroz tipo 1, 5 kg</span
                                 ><span class="app-mix-bar is-top"><i style="--v: 68"></i></span><span>34%</span
@@ -1828,7 +1837,7 @@
                                 ><i class="b"></i><i></i><i></i><i class="m"></i><i></i><i></i><i class="m"></i><i></i
                                 ><i></i><i class="m"></i><i></i><i></i
                               ></span>
-                              <p class="app-small app-muted">Comprava a cada 3 semanas. 340 unidades em estoque.</p>
+                              <p class="app-small app-muted">Comprava a cada 3&nbsp;semanas. 340 unidades em estoque.</p>
                             </div>
                             <div class="app-box">
                               <div class="app-box-head">
@@ -1889,16 +1898,16 @@
                           <div class="app-body">
                             <div class="app-facts">
                               <div class="app-box">
-                                <span class="app-label">Em aberto</span><span class="app-value">R$ 2.180</span
+                                <span class="app-label">Em aberto</span><span class="app-value">R$&nbsp;2.180</span
                                 ><span class="app-small app-muted">3 boletos</span>
                               </div>
                               <div class="app-box">
-                                <span class="app-label">Vencido</span><span class="app-value app-negative">R$ 890</span
-                                ><span class="app-small app-muted">1 boleto · 12 dias</span>
+                                <span class="app-label">Vencido</span><span class="app-value app-negative">R$&nbsp;890</span
+                                ><span class="app-small app-muted">1 boleto · 12&nbsp;dias</span>
                               </div>
                             </div>
                             <div class="app-banner">
-                              <strong>Atrasou 3 meses seguidos.</strong> Considere à vista ou prazo menor no próximo
+                              <strong>Atrasou 3&nbsp;meses seguidos.</strong> Considere à vista ou prazo menor no próximo
                               pedido.
                             </div>
                             <div>
@@ -1908,7 +1917,7 @@
                                   <div class="app-small app-muted">Venceu em 14 de out.</div>
                                 </div>
                                 <div class="app-invoice-end">
-                                  R$ 890,00<span class="app-chip app-chip--negative">Vencido há 12 dias</span>
+                                  R$&nbsp;890,00<span class="app-chip app-chip--negative">Vencido há 12&nbsp;dias</span>
                                 </div>
                               </div>
                               <div class="app-invoice">
@@ -1917,7 +1926,7 @@
                                   <div class="app-small app-muted">Vence em 13 de nov.</div>
                                 </div>
                                 <div class="app-invoice-end">
-                                  R$ 890,00<span class="app-chip">Vence em 18 dias</span>
+                                  R$&nbsp;890,00<span class="app-chip">Vence em 18&nbsp;dias</span>
                                 </div>
                               </div>
                               <div class="app-invoice">
@@ -1926,7 +1935,7 @@
                                   <div class="app-small app-muted">Vence em 20 de nov.</div>
                                 </div>
                                 <div class="app-invoice-end">
-                                  R$ 400,00<span class="app-chip">Vence em 25 dias</span>
+                                  R$&nbsp;400,00<span class="app-chip">Vence em 25&nbsp;dias</span>
                                 </div>
                               </div>
                             </div>
@@ -2026,14 +2035,14 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 paradas · 38 km</span
-                              ><span class="app-chip app-chip--positive">14 km a menos</span>
+                              <span>7 paradas · 38&nbsp;km</span
+                              ><span class="app-chip app-chip--positive">14&nbsp;km a menos</span>
                             </div>
                             <div class="app-button">Iniciar navegação</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Abre às 09:00 · <span class="app-negative">vencido R$ 890</span>
+                                Abre às 09:00 · <span class="app-negative">vencido R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -2108,7 +2117,7 @@
                             <div class="app-group">Ontem</div>
                             <div class="app-alert">
                               <div class="app-alert-main">
-                                <div class="app-alert-head"><span>Atacadão do Bairro: 78 dias sem comprar</span></div>
+                                <div class="app-alert-head"><span>Atacado do Bairro: 78 dias sem comprar</span></div>
                                 <div class="app-alert-text">Costuma comprar a cada 30 dias.</div>
                               </div>
                             </div>
@@ -2267,7 +2276,7 @@
                               <div class="app-notice-main">
                                 <div class="app-notice-head"><span translate="no">Ritmo</span><span>07:00</span></div>
                                 <div class="app-notice-title">Mercearia Central caiu 40%</div>
-                                <div class="app-notice-text">De R$ 2.070 para R$ 1.240 no último pedido.</div>
+                                <div class="app-notice-text">De R$&nbsp;2.070 para R$&nbsp;1.240 no último pedido.</div>
                               </div>
                             </div>
                           </div>
@@ -2279,28 +2288,12 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="devices">
-            <figure>
-              <div class="frame frame--laptop">
-                <picture
-                  ><source srcset="assets/screens/pt-BR/WebPortal-dark.webp" media="(prefers-color-scheme: dark)" />
-                  <img
-                    src="assets/screens/pt-BR/WebPortal-light.webp"
-                    width="1280"
-                    height="720"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Painel do gestor no notebook: resultados do mês e tabela da equipe de vendas."
-                /></picture>
-              </div>
-              <div class="laptop-base"></div>
-              <figcaption>Notebook: o painel do gestor.</figcaption>
-            </figure>
-            <figure>
-              <div class="frame frame--tablet">
-                <picture
-                  ><source srcset="assets/screens/pt-BR/TabletLayout-dark.webp" media="(prefers-color-scheme: dark)" />
+            <figure class="device-tablet" data-reveal>
+              <div class="device-tablet-frame">
+                <picture>
+                  <source srcset="assets/screens/pt-BR/TabletLayout-dark.avif" type="image/avif" media="(prefers-color-scheme: dark)" />
+                  <source srcset="assets/screens/pt-BR/TabletLayout-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)" />
+                  <source srcset="assets/screens/pt-BR/TabletLayout-light.avif" type="image/avif" />
                   <img
                     src="assets/screens/pt-BR/TabletLayout-light.webp"
                     width="1024"
@@ -2312,7 +2305,33 @@
               </div>
               <figcaption>Tablet: lista e detalhe lado a lado.</figcaption>
             </figure>
+            <figure class="device-laptop" data-reveal>
+              <div class="device-laptop-lid">
+                <div class="window">
+                  <div class="window-bar" aria-hidden="true">
+                    <span class="window-lights"><i></i><i></i><i></i></span>
+                    <span class="window-title">Ritmo</span>
+                    <span class="window-buttons"><i class="window-min"></i><i class="window-max"></i><i class="window-close"></i></span>
+                  </div>
+                  <picture>
+                  <source srcset="assets/screens/pt-BR/WebPortal-dark.avif" type="image/avif" media="(prefers-color-scheme: dark)" />
+                  <source srcset="assets/screens/pt-BR/WebPortal-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)" />
+                  <source srcset="assets/screens/pt-BR/WebPortal-light.avif" type="image/avif" />
+                  <img
+                    src="assets/screens/pt-BR/WebPortal-light.webp"
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Painel do gestor no notebook: resultados do mês e tabela da equipe de vendas."
+                /></picture>
+                </div>
+              </div>
+              <div class="device-laptop-base"></div>
+              <figcaption>Notebook: o painel do gestor.</figcaption>
+            </figure>
           </div>
+          <p class="device-note">Funciona no navegador, em Windows, Mac ou Linux.</p>
         </div>
       </section>
 
@@ -2330,8 +2349,8 @@
               <div class="wa">
                 <div class="wa-msg wa-msg--out">Como está o Mercadinho São José?</div>
                 <div class="wa-msg">
-                  <b>Mercadinho São José</b><br />Último pedido: <b>R$ 3.420</b> em 2 de out.<br />Sem café desde
-                  agosto.<br /><span class="wa-muted">Atualizado há 12 min</span>
+                  <b>Mercadinho São José</b><br />Último pedido: <b>R$&nbsp;3.420</b> em 2 de out.<br />Sem café desde
+                  agosto.<br /><span class="wa-muted">Atualizado há 12&nbsp;min</span>
                 </div>
                 <div class="wa-buttons">
                   <span class="wa-button">Ver mix de produtos</span><span class="wa-button">Boletos em aberto</span>
@@ -2342,7 +2361,7 @@
             <figure>
               <div class="wa">
                 <div class="wa-msg">
-                  <b>Bom dia, Ana.</b> Hoje você tem 7 visitas.<br />Supermercado Boa Vista: boleto de R$ 890
+                  <b>Bom dia, Ana.</b> Hoje você tem 7 visitas.<br />Supermercado Boa Vista: boleto de R$&nbsp;890
                   vencido.<br />Mercearia Central: caiu 40%.
                 </div>
                 <div class="wa-buttons">
@@ -2447,6 +2466,12 @@
               <p>Cada empresa vê só os próprios dados, e cada vendedor vê só a própria carteira.</p>
             </li>
           </ul>
+          <!-- TODO: prova social. Ative só quando for verdade, com a frase e o nome autorizados pela empresa piloto.
+          <blockquote class="pilot-quote">
+            <p>[frase real de quem participou do piloto]</p>
+            <footer>[nome, cargo e empresa, com autorização]</footer>
+          </blockquote>
+          -->
         </div>
       </section>
 
@@ -2568,7 +2593,7 @@
               <summary>
                 Precisa instalar alguma coisa?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
               </summary>
-              <p>O WhatsApp já funciona. O app é opcional.</p>
+              <p>Não, se você usar pelo WhatsApp. O app é opcional.</p>
             </details>
             <details>
               <summary>
@@ -2628,16 +2653,8 @@
             <h2 id="contato">Quer testar o Ritmo na sua empresa?</h2>
             <p>Conte como sua equipe vende e qual sistema vocês usam.</p>
             <div class="actions">
-              <a
-                class="button button--inverse"
-                href="https://wa.me/5581988980089?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ritmo%20e%20quero%20saber%20sobre%20o%20piloto."
-                ><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Chamar no WhatsApp</a
-              >
-              <a
-                class="button button--inverse-outline"
-                href="mailto:marcozerolabs@gmail.com?subject=Piloto%20do%20Ritmo"
-                ><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg>Enviar e-mail</a
-              >
+              <a class="button button--inverse" data-email-link data-subject="Piloto do Ritmo" hidden><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg>Enviar e-mail</a>
+              <a class="button button--inverse-outline" data-whatsapp-link hidden><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Chamar no WhatsApp</a>
             </div>
           </div>
         </div>
@@ -2656,6 +2673,10 @@
                 <path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54" /></svg
               ><span translate="no">um produto marco zero labs</span>
             </p>
+            <!-- TODO: razão social e CNPJ. Ficam fora da tela até serem preenchidos:
+            <p>[razão social] · CNPJ [número]</p>
+            -->
+            <p>Marco Zero Labs<br />Recife, Pernambuco</p>
             <p>Estúdio de software de Pernambuco, criando o Ritmo.</p>
           </div>
           <nav aria-label="Rodapé">
@@ -2671,20 +2692,16 @@
           <div>
             <h2>Contato</h2>
             <ul>
-              <li><a href="mailto:marcozerolabs@gmail.com?subject=Piloto%20do%20Ritmo">marcozerolabs@gmail.com</a></li>
-              <li>
-                <a
-                  href="https://wa.me/5581988980089?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ritmo%20e%20quero%20saber%20sobre%20o%20piloto."
-                  >WhatsApp</a
-                >
-              </li>
-              <li><a href="https://www.instagram.com/marcozerolabs/">Instagram @marcozerolabs</a></li>
+              <li><a data-email-link data-email-text data-subject="Piloto do Ritmo" hidden></a></li>
+              <li data-whatsapp-item hidden><a data-whatsapp-link>WhatsApp</a></li>
+              <li><a href="https://www.instagram.com/marcozerolabs/" rel="noopener">Instagram @marcozerolabs</a></li>
+              <li><a href="privacidade.html">Política de Privacidade</a></li>
               <li><a href="./" lang="pt-BR" hreflang="pt-BR">Português</a></li>
               <li><a href="en/" lang="en" hreflang="en">English</a></li>
             </ul>
           </div>
         </div>
-        <p class="legal">© 2026 Marco Zero Labs. Este site não usa cookies nem coleta dados de navegação.</p>
+        <p class="legal">© 2026 Marco Zero Labs. Este site não usa cookies nem rastreia sua navegação. Feito em Recife.</p>
       </div>
     </footer>
   </body>

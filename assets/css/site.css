@@ -155,9 +155,6 @@ h3 { font-size: 19px; line-height: 27px; font-weight: 600; letter-spacing: -0.01
 /* Device frames (drawn here, not in the images) */
 .frame { overflow: hidden; background: var(--surface); }
 .frame--phone { width: 100%; max-width: 280px; border: 8px solid #1a1a17; border-radius: 40px; box-shadow: 0 30px 60px rgba(6, 42, 49, 0.35), 0 8px 18px rgba(6, 42, 49, 0.2); }
-.frame--tablet { border: 10px solid #1a1a17; border-radius: 24px; box-shadow: var(--shadow-overlay); }
-.frame--laptop { border: 8px solid #1a1a17; border-bottom-width: 12px; border-radius: 12px 12px 0 0; }
-.laptop-base { height: var(--space-3); margin-inline: calc(var(--space-2) * -1); background: var(--border-strong); border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
 .frame--message { max-width: 452px; border: 1px solid var(--border); border-radius: 16px; box-shadow: var(--shadow-overlay); }
 
 /* Channels */
@@ -211,8 +208,6 @@ h3 { font-size: 19px; line-height: 27px; font-weight: 600; letter-spacing: -0.01
 }
 
 /* Every screen */
-.devices { display: grid; gap: var(--space-8); align-items: end; }
-.devices figcaption { margin-top: var(--space-3); }
 .gallery { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(170px, 1fr); gap: var(--space-6); margin-top: var(--space-12); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: var(--space-2); }
 .gallery figure { scroll-snap-align: start; }
 .gallery .frame--phone { box-shadow: none; max-width: 240px; }
@@ -220,7 +215,7 @@ h3 { font-size: 19px; line-height: 27px; font-weight: 600; letter-spacing: -0.01
 .notifications { margin-top: var(--space-12); }
 .notifications figcaption { margin-top: var(--space-3); }
 .section .note { margin-top: var(--space-8); }
-@media (min-width: 960px) { .devices { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); } .gallery { overflow: visible; } }
+@media (min-width: 960px) { .gallery { overflow: visible; } }
 
 /* Trust */
 .statements { display: grid; gap: var(--space-4); margin-bottom: var(--space-4); }
@@ -376,6 +371,9 @@ html[lang="en"] .founders li:last-child::before { content: " and "; }
 .seg-option--icon > span { padding-inline: 0; }
 .seg-option:hover > span { background: var(--surface-muted); color: var(--ink); }
 .seg-option input:checked + span { background: var(--brand-subtle); color: var(--ink); }
+.seg-button { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; min-width: 36px; padding-inline: var(--space-3); background: none; border: 0; border-radius: var(--radius-md); color: var(--ink-muted); font: 500 14px/20px var(--font-sans); cursor: pointer; }
+.seg-button:hover { background: var(--surface-muted); color: var(--ink); }
+.seg-button[aria-pressed="true"] { background: var(--brand-subtle); color: var(--ink); }
 .seg-option input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 1px; }
 .theme-desktop { display: none; }
 .menu-panel .seg { align-self: flex-start; margin-top: var(--space-2); }
@@ -428,7 +426,12 @@ html[lang="en"] .founders li:last-child::before { content: " and "; }
 .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
 .app-convo { display: flex; flex-direction: column; gap: calc(12 * var(--u)); }
 .app-convo[hidden] { display: none; }
-@media (min-width: 900px) { .preview { grid-template-columns: minmax(0, 1fr) 320px; align-items: start; column-gap: var(--space-12); } }
+@media (min-width: 900px) {
+  .preview { grid-template-columns: minmax(0, 1fr) 320px; grid-template-rows: auto 1fr; align-items: start; column-gap: var(--space-12); }
+  .preview-device, .device-tablet { grid-column: 2; grid-row: 1 / span 2; }
+  .preview-controls, .device-laptop { grid-column: 1; }
+  html[data-form="tablet"] .preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .preview .device { max-width: 320px; }
 
 /* WhatsApp */
@@ -452,8 +455,34 @@ html[lang="en"] .founders li:last-child::before { content: " and "; }
 
 /* Second pass: targets on touch screens, footer links, Android notifications */
 @media (pointer: coarse) {
-  .seg-option > span { min-height: var(--touch-min); min-width: var(--touch-min); }
+  .seg-option > span, .seg-button { min-height: var(--touch-min); min-width: var(--touch-min); }
   .chip { min-height: var(--touch-min); }
 }
 .site-footer li a { display: inline-block; min-height: 24px; }
 html:not(.js) .needs-js { display: none !important; }
+
+/* Hidden until assets/contact.js fills them in */
+.button[hidden] { display: none; }
+
+/* Privacy pages */
+.legal-header { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); }
+.legal-page { max-width: 720px; }
+.legal-page h2 { margin-top: var(--space-8); margin-bottom: var(--space-3); }
+.legal-page p, .legal-page ul { margin-bottom: var(--space-3); }
+.legal-page ul { padding-left: var(--space-6); list-style: disc; }
+.legal-page li + li { margin-top: var(--space-2); }
+.legal-updated { color: var(--ink-muted); }
+.legal-page h1 { margin-bottom: var(--space-3); }
+.legal-page h2 { font-size: 22px; line-height: 30px; }
+
+/* Typography: figures line up in columns, titles and paragraphs break well */
+html { font-variant-numeric: tabular-nums; }
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+::selection { background: var(--brand); color: var(--on-brand); }
+
+/* 404 */
+.not-found { display: grid; align-content: center; min-height: 100vh; min-height: 100dvh; }
+.not-found h1 { margin-bottom: var(--space-4); }
+.not-found .lead { margin-bottom: var(--space-6); }
+.not-found [data-language] + [data-language] { margin-top: var(--space-12); }

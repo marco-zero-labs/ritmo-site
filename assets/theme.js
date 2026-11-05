@@ -1,6 +1,6 @@
 // Runs in <head>, before the first paint. Keeps two preferences for this browser only:
 // the theme (light, dark or system) and the platform shown in the phone previews.
-// The page works without this file: light theme and iOS previews.
+// The page works without this file: light theme and iOS previews. device.js runs first.
 (function () {
   var root = document.documentElement;
   var query = window.matchMedia('(prefers-color-scheme: dark)');
@@ -17,11 +17,12 @@
     var saved = read(THEME_KEY);
     return saved === 'light' || saved === 'dark' ? saved : 'system';
   }
-  // The user agent only picks the starting platform. Nothing is stored or sent.
+  // The system only picks the starting platform: the same one on iOS and iPadOS, and
+  // Android everywhere else. Nothing is sent.
   function platformPreference() {
     var saved = read(PLATFORM_KEY);
     if (saved === 'ios' || saved === 'android') return saved;
-    return /android/i.test(navigator.userAgent) ? 'android' : 'ios';
+    return root.dataset.os === 'ios' || root.dataset.os === 'ipados' ? 'ios' : 'android';
   }
   function resolvedTheme() {
     var preference = themePreference();
@@ -46,6 +47,10 @@
     var values = { theme: themePreference(), platform: platformPreference() };
     var inputs = document.querySelectorAll('input[data-pref]');
     for (var i = 0; i < inputs.length; i++) inputs[i].checked = inputs[i].value === values[inputs[i].dataset.pref];
+    var buttons = document.querySelectorAll('button[data-pref-button]');
+    for (var j = 0; j < buttons.length; j++) {
+      buttons[j].setAttribute('aria-pressed', String(buttons[j].dataset.value === values[buttons[j].dataset.prefButton]));
+    }
   }
   function apply() {
     var theme = resolvedTheme();

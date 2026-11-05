@@ -23,9 +23,9 @@ jobs:
       # Publish only what the site needs, not the scripts or the repository's config.
       - run: |
           mkdir -p _site/en
-          cp index.html _site/
-          cp en/index.html _site/en/
-          cp robots.txt sitemap.xml manifest.webmanifest _site/
+          cp index.html privacidade.html 404.html _site/
+          cp en/index.html en/privacy.html _site/en/
+          cp robots.txt sitemap.xml site.webmanifest _site/
           cp -r assets _site/
       - uses: actions/upload-pages-artifact@v5
         with:
