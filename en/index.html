@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#1b1b19" media="(prefers-color-scheme: dark)" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="pt_BR" />
     <meta property="og:site_name" content="Ritmo" />
     <meta property="og:title" content="Ritmo · The sales copilot for people who sell on the street" />
     <meta
@@ -23,16 +24,18 @@
       content="Walk into every visit knowing what to sell, with your company’s data, alerts and the route of the day. In development, looking for pilot companies."
     />
     <meta property="og:url" content="https://marco-zero-labs.github.io/ritmo-site/en/" />
-    <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og-image-en.png" />
+    <meta property="og:image" content="https://marco-zero-labs.github.io/ritmo-site/assets/og/ritmo-en.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="The Ritmo mark and the title The sales copilot for people who sell on the street."
+      content="The Marco Zero Labs symbol, the name Ritmo and the line The sales copilot for people who sell on the street."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="../assets/icon.svg" type="image/svg+xml" />
-    <link rel="manifest" href="../manifest.webmanifest" />
+    <link rel="icon" href="../assets/icons/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="../site.webmanifest" />
     <link
       rel="preload"
       href="../assets/fonts/ibm-plex-sans-latin-600-normal.woff2"
@@ -51,10 +54,19 @@
     <link rel="stylesheet" href="../assets/css/site.css" />
     <link rel="stylesheet" href="../assets/css/device.css" />
     <link rel="stylesheet" href="../assets/css/demo.css" />
+    <script src="../assets/device.js"></script>
     <script src="../assets/theme.js"></script>
     <script src="../assets/menu.js" defer></script>
     <script src="../assets/demo.js" defer></script>
+    <script src="../assets/contact.js" defer></script>
     <script src="../assets/site.js" defer></script>
+    <!-- TODO: metrics without cookies. Off until configured; keep only the one you choose, set
+         data-domain, and update the metrics line in the privacy pages.
+    Plausible:
+    <script defer data-domain="TODO-your-domain" src="https://plausible.io/js/script.js"></script>
+    Umami:
+    <script defer data-website-id="TODO-website-id" src="https://TODO-your-umami-host/script.js"></script>
+    -->
   </head>
   <body>
     <svg class="sprite" aria-hidden="true">
@@ -241,7 +253,7 @@
             <div class="actions">
               <a
                 class="button button--primary"
-                href="#contact"
+                href="#contact" data-whatsapp-cta
                 ><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Become a pilot company</a
               >
               <a class="button button--secondary" href="#how-it-works">See how it works</a>
@@ -269,7 +281,7 @@
             <p class="visually-hidden">
               A demo in 8 scenes: a seller gets the daily briefing, asks how a customer is doing, sees that the figure
               comes from the ERP, chooses between two similar customers, asks the same on WhatsApp, opens the route with
-              14 km saved and gets an overdue invoice alert.
+              14&nbsp;km saved and gets an overdue invoice alert.
             </p>
             <div class="device device--ios" data-device aria-hidden="true">
               <div class="device-frame">
@@ -699,13 +711,13 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                              <span>7 stops · 38&nbsp;km</span><span class="app-chip app-chip--positive">14&nbsp;km saved</span>
                             </div>
                             <div class="app-button">Start navigation</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                                Opens 09:00 · <span class="app-negative">overdue R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -773,7 +785,7 @@
                               <div class="app-notice-main">
                                 <div class="app-notice-head"><span translate="no">Ritmo</span><span>now</span></div>
                                 <div class="app-notice-title">Supermercado Boa Vista has an overdue invoice</div>
-                                <div class="app-notice-text">R$ 890 · 12 days</div>
+                                <div class="app-notice-text">R$&nbsp;890 · 12&nbsp;days</div>
                               </div>
                             </div>
                           </div>
@@ -865,6 +877,7 @@
         <div class="wrap">
           <div class="section-head">
             <h2 id="problem">The information exists, but it does not reach the people on the street</h2>
+            <p class="lead">Examples with fictional data.</p>
           </div>
           <ul class="day">
             <li>
@@ -872,23 +885,21 @@
                 <svg class="i" aria-hidden="true"><use href="#i-clock" /></svg>Before the visit
               </p>
               <p>
-                You arrive without knowing the last order, what the customer stopped buying or whether an invoice is
-                overdue.
+                You walk into Mercadinho São José without remembering that it has not bought in 24&nbsp;days and usually buys every 14.
               </p>
             </li>
             <li>
               <p class="when">
                 <svg class="i" aria-hidden="true"><use href="#i-pin" /></svg>On the route
               </p>
-              <p>A simple question turns into a call or a voice message to the office, and the answer takes time.</p>
+              <p>To check whether Supermercado Boa Vista has an overdue invoice, you call the office or send a voice message, and the answer arrives after the visit.</p>
             </li>
             <li>
               <p class="when">
                 <svg class="i" aria-hidden="true"><use href="#i-calendar" /></svg>At the end of the month
               </p>
               <p>
-                Managers see the result when it is too late to act, and some customers stop buying without anyone
-                noticing.
+                Managers only find out at closing that Mercearia Central dropped 40%, when it is too late to act.
               </p>
             </li>
           </ul>
@@ -1054,17 +1065,17 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Last order</span><span class="app-value">R$ 3,420</span
+                                      <span class="app-label">Last order</span><span class="app-value">R$&nbsp;3,420</span
                                       ><span class="app-small app-muted">Oct 2</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$ 3,100</span>
+                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$&nbsp;3,100</span>
                                     </div>
                                   </div>
                                   <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
                                 </div>
                                 <div class="app-card-foot">
-                                  <span>From your company’s data</span><span>Updated 12 min ago</span>
+                                  <span>From your company’s data</span><span>Updated 12&nbsp;min ago</span>
                                 </div>
                               </div>
                             </div>
@@ -1197,13 +1208,13 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                              <span>7 stops · 38&nbsp;km</span><span class="app-chip app-chip--positive">14&nbsp;km saved</span>
                             </div>
                             <div class="app-button">Start navigation</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                                Opens 09:00 · <span class="app-negative">overdue R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -1247,7 +1258,7 @@
             <article>
               <h3>Alerts</h3>
               <p>
-                A notice when a customer falls out of their buying rhythm, drops in volume or has an overdue invoice.
+                A notice when a customer falls out of their buying rhythm, drops in volume or has an overdue invoice. Fictional example: “Mercadinho São José has not bought in 24 days; it usually buys every 14.”
               </p>
               <div class="device device--ios" data-device aria-hidden="true">
                 <div class="device-frame">
@@ -1307,7 +1318,7 @@
                             <div class="app-alert">
                               <div class="app-alert-main">
                                 <div class="app-alert-head">
-                                  <span>Atacadão do Bairro: 78 days without buying</span>
+                                  <span>Atacado do Bairro: 78 days without buying</span>
                                 </div>
                                 <div class="app-alert-text">Usually buys every 30 days.</div>
                               </div>
@@ -1366,15 +1377,6 @@
           <div class="preview" data-preview>
             <div class="preview-controls">
               <div class="preview-pickers">
-                <div class="seg needs-js" role="radiogroup" aria-label="Platform">
-                  <label class="seg-option"
-                    ><input type="radio" name="platform" value="ios" data-pref="platform" /><span>iOS</span></label
-                  ><label class="seg-option"
-                    ><input type="radio" name="platform" value="android" data-pref="platform" /><span
-                      >Android</span
-                    ></label
-                  >
-                </div>
                 <div class="seg needs-js" role="radiogroup" aria-label="Theme">
                   <label class="seg-option"
                     ><input type="radio" name="theme-preview" value="light" data-pref="theme" /><span
@@ -1498,7 +1500,11 @@
                 </div>
               </div>
             </div>
-            <div class="preview-device">
+            <div class="preview-device" data-reveal>
+              <div class="seg needs-js device-switch" role="group" aria-label="Device">
+                <button class="seg-button" type="button" data-pref-button="platform" data-value="ios" aria-pressed="false">iPhone</button
+                ><button class="seg-button" type="button" data-pref-button="platform" data-value="android" aria-pressed="false">Android</button>
+              </div>
               <div class="device device--ios" data-device>
                 <div class="device-frame">
                   <span class="device-camera"></span>
@@ -1544,24 +1550,24 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Last order</span><span class="app-value">R$ 3,420</span
+                                      <span class="app-label">Last order</span><span class="app-value">R$&nbsp;3,420</span
                                       ><span class="app-small app-muted">Oct 2</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$ 3,100</span>
+                                      <span class="app-label">Avg. ticket</span><span class="app-value">R$&nbsp;3,100</span>
                                     </div>
                                   </div>
                                   <p>Buys rice, beans and oil every two weeks. No coffee since August.</p>
                                 </div>
                                 <div class="app-card-foot">
-                                  <span>From your company’s data</span><span>Updated 12 min ago</span>
+                                  <span>From your company’s data</span><span>Updated 12&nbsp;min ago</span>
                                 </div>
                               </div>
                             </div>
                             <div class="app-convo" data-ask="1" hidden>
                               <div class="app-question">Who stopped buying this month?</div>
                               <div class="app-reply">
-                                2 customers fell out of rhythm: Mercearia Central (down 40%) and Atacadão do Bairro (78
+                                2 customers fell out of rhythm: Mercearia Central (down 40%) and Atacado do Bairro (78
                                 days without buying).
                               </div>
                             </div>
@@ -1572,26 +1578,26 @@
                                 <div class="app-card-body">
                                   <div class="app-facts">
                                     <div class="app-fact">
-                                      <span class="app-label">Sold</span><span class="app-value">R$ 184,320</span>
+                                      <span class="app-label">Sold</span><span class="app-value">R$&nbsp;184,320</span>
                                     </div>
                                     <div class="app-fact">
-                                      <span class="app-label">Left</span><span class="app-value">R$ 51,680</span>
+                                      <span class="app-label">Left</span><span class="app-value">R$&nbsp;51,680</span>
                                     </div>
                                   </div>
-                                  <p>You reached 78% of the R$ 236,000 target. 6 days left.</p>
+                                  <p>You reached 78% of the R$&nbsp;236,000 target. 6&nbsp;days left.</p>
                                 </div>
                               </div>
                             </div>
                             <div class="app-convo" data-ask="3" hidden>
                               <div class="app-question">What has Mercadinho São José stopped buying?</div>
                               <div class="app-reply">
-                                Coffee 500 g: bought every 3 weeks, last ordered on Aug 7. Similar customers also buy
+                                Coffee 500 g: bought every 3&nbsp;weeks, last ordered on Aug 7. Similar customers also buy
                                 wheat flour 1 kg.
                               </div>
                             </div>
                             <div class="app-convo" data-ask="4" hidden>
                               <div class="app-question">Is there an overdue invoice on today’s route?</div>
-                              <div class="app-reply">Yes. Supermercado Boa Vista, stop 2: R$ 890, 12 days overdue.</div>
+                              <div class="app-reply">Yes. Supermercado Boa Vista, stop 2: R$&nbsp;890, 12&nbsp;days overdue.</div>
                             </div>
                             <div class="app-convo" data-ask="5" hidden>
                               <div class="app-question">How much rice did I sell per month in the last six months?</div>
@@ -1606,7 +1612,7 @@
                                     ><span class="app-bar"><span>4.8</span><i style="--v: 100"></i>Sep</span
                                     ><span class="app-bar"><span>3.7</span><i style="--v: 77"></i>Oct</span>
                                   </div>
-                                  <p class="app-small app-muted">Six-month total: R$ 25.3 thousand</p>
+                                  <p class="app-small app-muted">Six-month total: R$&nbsp;25.3 thousand</p>
                                 </div>
                               </div>
                             </div>
@@ -1677,7 +1683,7 @@
                             <div class="app-row">
                               <span class="app-initials">AB</span>
                               <div class="app-row-main">
-                                <div class="app-row-title" translate="no">Atacadão do Bairro</div>
+                                <div class="app-row-title" translate="no">Atacado do Bairro</div>
                                 <div class="app-row-sub">
                                   <span class="app-rhythm" aria-hidden="true"
                                     ><i class="b"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="m"></i
@@ -1727,7 +1733,7 @@
                                   <span class="app-rhythm" aria-hidden="true"
                                     ><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i
                                     ><i class="m"></i><i class="m"></i><i></i><i></i><i></i><i></i><i></i><i></i></span
-                                  ><span>61 days ago</span>
+                                  ><span>14 days ago</span>
                                 </div>
                               </div>
                               <div class="app-row-end">
@@ -1813,7 +1819,7 @@
                           </div>
                           <div class="app-body">
                             <div class="app-box">
-                              <div class="app-box-head"><span>Share of revenue · 6 months</span></div>
+                              <div class="app-box-head"><span>Share of revenue · 6&nbsp;months</span></div>
                               <div class="app-mix">
                                 <span>Rice type 1, 5 kg</span
                                 ><span class="app-mix-bar is-top"><i style="--v: 68"></i></span><span>34%</span
@@ -1831,7 +1837,7 @@
                                 ><i class="b"></i><i></i><i></i><i class="m"></i><i></i><i></i><i class="m"></i><i></i
                                 ><i></i><i class="m"></i><i></i><i></i
                               ></span>
-                              <p class="app-small app-muted">Bought every 3 weeks. 340 units in stock.</p>
+                              <p class="app-small app-muted">Bought every 3&nbsp;weeks. 340 units in stock.</p>
                             </div>
                             <div class="app-box">
                               <div class="app-box-head">
@@ -1892,16 +1898,16 @@
                           <div class="app-body">
                             <div class="app-facts">
                               <div class="app-box">
-                                <span class="app-label">Open</span><span class="app-value">R$ 2,180</span
+                                <span class="app-label">Open</span><span class="app-value">R$&nbsp;2,180</span
                                 ><span class="app-small app-muted">3 invoices</span>
                               </div>
                               <div class="app-box">
-                                <span class="app-label">Overdue</span><span class="app-value app-negative">R$ 890</span
-                                ><span class="app-small app-muted">1 invoice · 12 days</span>
+                                <span class="app-label">Overdue</span><span class="app-value app-negative">R$&nbsp;890</span
+                                ><span class="app-small app-muted">1 invoice · 12&nbsp;days</span>
                               </div>
                             </div>
                             <div class="app-banner">
-                              <strong>Late 3 months in a row.</strong> Consider cash or a shorter term on the next
+                              <strong>Late 3&nbsp;months in a row.</strong> Consider cash or a shorter term on the next
                               order.
                             </div>
                             <div>
@@ -1911,7 +1917,7 @@
                                   <div class="app-small app-muted">Due Oct 14</div>
                                 </div>
                                 <div class="app-invoice-end">
-                                  R$ 890.00<span class="app-chip app-chip--negative">Overdue 12 days</span>
+                                  R$&nbsp;890.00<span class="app-chip app-chip--negative">Overdue 12&nbsp;days</span>
                                 </div>
                               </div>
                               <div class="app-invoice">
@@ -1919,14 +1925,14 @@
                                   <div>NF 118204 · 2/2</div>
                                   <div class="app-small app-muted">Due Nov 13</div>
                                 </div>
-                                <div class="app-invoice-end">R$ 890.00<span class="app-chip">Due in 18 days</span></div>
+                                <div class="app-invoice-end">R$&nbsp;890.00<span class="app-chip">Due in 18&nbsp;days</span></div>
                               </div>
                               <div class="app-invoice">
                                 <div>
                                   <div>NF 118511</div>
                                   <div class="app-small app-muted">Due Nov 20</div>
                                 </div>
-                                <div class="app-invoice-end">R$ 400.00<span class="app-chip">Due in 25 days</span></div>
+                                <div class="app-invoice-end">R$&nbsp;400.00<span class="app-chip">Due in 25&nbsp;days</span></div>
                               </div>
                             </div>
                           </div>
@@ -2025,13 +2031,13 @@
                           </svg>
                           <div class="app-body">
                             <div class="app-route-sum">
-                              <span>7 stops · 38 km</span><span class="app-chip app-chip--positive">14 km saved</span>
+                              <span>7 stops · 38&nbsp;km</span><span class="app-chip app-chip--positive">14&nbsp;km saved</span>
                             </div>
                             <div class="app-button">Start navigation</div>
                             <div>
                               <div translate="no">Supermercado Boa Vista</div>
                               <div class="app-small app-muted">
-                                Opens 09:00 · <span class="app-negative">overdue R$ 890</span>
+                                Opens 09:00 · <span class="app-negative">overdue R$&nbsp;890</span>
                               </div>
                             </div>
                           </div>
@@ -2107,7 +2113,7 @@
                             <div class="app-alert">
                               <div class="app-alert-main">
                                 <div class="app-alert-head">
-                                  <span>Atacadão do Bairro: 78 days without buying</span>
+                                  <span>Atacado do Bairro: 78 days without buying</span>
                                 </div>
                                 <div class="app-alert-text">Usually buys every 30 days.</div>
                               </div>
@@ -2267,7 +2273,7 @@
                               <div class="app-notice-main">
                                 <div class="app-notice-head"><span translate="no">Ritmo</span><span>07:00</span></div>
                                 <div class="app-notice-title">Mercearia Central dropped 40%</div>
-                                <div class="app-notice-text">From R$ 2,070 to R$ 1,240 on the last order.</div>
+                                <div class="app-notice-text">From R$&nbsp;2,070 to R$&nbsp;1,240 on the last order.</div>
                               </div>
                             </div>
                           </div>
@@ -2279,28 +2285,12 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="devices">
-            <figure>
-              <div class="frame frame--laptop">
-                <picture
-                  ><source srcset="../assets/screens/en/WebPortal-dark.webp" media="(prefers-color-scheme: dark)" />
-                  <img
-                    src="../assets/screens/en/WebPortal-light.webp"
-                    width="1280"
-                    height="720"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Manager’s dashboard on a laptop: the month’s results and the sales team table."
-                /></picture>
-              </div>
-              <div class="laptop-base"></div>
-              <figcaption>Laptop: the manager’s dashboard.</figcaption>
-            </figure>
-            <figure>
-              <div class="frame frame--tablet">
-                <picture
-                  ><source srcset="../assets/screens/en/TabletLayout-dark.webp" media="(prefers-color-scheme: dark)" />
+            <figure class="device-tablet" data-reveal>
+              <div class="device-tablet-frame">
+                <picture>
+                  <source srcset="../assets/screens/en/TabletLayout-dark.avif" type="image/avif" media="(prefers-color-scheme: dark)" />
+                  <source srcset="../assets/screens/en/TabletLayout-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)" />
+                  <source srcset="../assets/screens/en/TabletLayout-light.avif" type="image/avif" />
                   <img
                     src="../assets/screens/en/TabletLayout-light.webp"
                     width="1024"
@@ -2312,7 +2302,33 @@
               </div>
               <figcaption>Tablet: list and detail side by side.</figcaption>
             </figure>
+            <figure class="device-laptop" data-reveal>
+              <div class="device-laptop-lid">
+                <div class="window">
+                  <div class="window-bar" aria-hidden="true">
+                    <span class="window-lights"><i></i><i></i><i></i></span>
+                    <span class="window-title">Ritmo</span>
+                    <span class="window-buttons"><i class="window-min"></i><i class="window-max"></i><i class="window-close"></i></span>
+                  </div>
+                  <picture>
+                  <source srcset="../assets/screens/en/WebPortal-dark.avif" type="image/avif" media="(prefers-color-scheme: dark)" />
+                  <source srcset="../assets/screens/en/WebPortal-dark.webp" type="image/webp" media="(prefers-color-scheme: dark)" />
+                  <source srcset="../assets/screens/en/WebPortal-light.avif" type="image/avif" />
+                  <img
+                    src="../assets/screens/en/WebPortal-light.webp"
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Manager’s dashboard on a laptop: the month’s results and the sales team table."
+                /></picture>
+                </div>
+              </div>
+              <div class="device-laptop-base"></div>
+              <figcaption>Laptop: the manager’s dashboard.</figcaption>
+            </figure>
           </div>
+          <p class="device-note">Works in the browser, on Windows, Mac or Linux.</p>
         </div>
       </section>
 
@@ -2330,9 +2346,9 @@
               <div class="wa">
                 <div class="wa-msg wa-msg--out">How is Mercadinho São José?</div>
                 <div class="wa-msg">
-                  <b>Mercadinho São José</b><br />Last order: <b>R$ 3,420</b> on Oct 2.<br />No coffee since August.<br /><span
+                  <b>Mercadinho São José</b><br />Last order: <b>R$&nbsp;3,420</b> on Oct 2.<br />No coffee since August.<br /><span
                     class="wa-muted"
-                    >Updated 12 min ago</span
+                    >Updated 12&nbsp;min ago</span
                   >
                 </div>
                 <div class="wa-buttons">
@@ -2344,7 +2360,7 @@
             <figure>
               <div class="wa">
                 <div class="wa-msg">
-                  <b>Good morning, Ana.</b> You have 7 visits today.<br />Supermercado Boa Vista: R$ 890 invoice
+                  <b>Good morning, Ana.</b> You have 7 visits today.<br />Supermercado Boa Vista: R$&nbsp;890 invoice
                   overdue.<br />Mercearia Central: down 40%.
                 </div>
                 <div class="wa-buttons">
@@ -2447,6 +2463,12 @@
               <p>Each company sees only its own data, and each seller sees only their own portfolio.</p>
             </li>
           </ul>
+          <!-- TODO: social proof. Turn on only when it is true, with the words and name approved by the pilot company.
+          <blockquote class="pilot-quote">
+            <p>[real words from someone in the pilot]</p>
+            <footer>[name, role and company, with permission]</footer>
+          </blockquote>
+          -->
         </div>
       </section>
 
@@ -2568,7 +2590,7 @@
               <summary>
                 Do I need to install anything?<svg class="i" aria-hidden="true"><use href="#i-chevron" /></svg>
               </summary>
-              <p>WhatsApp already works. The app is optional.</p>
+              <p>Not if you use WhatsApp. The app is optional.</p>
             </details>
             <details>
               <summary>
@@ -2628,10 +2650,8 @@
             <h2 id="contact">Want to test Ritmo at your company?</h2>
             <p>Tell us how your team sells and which system you use.</p>
             <div class="actions">
-              <a
-                class="button button--inverse" href="mailto:marcozerolabs@gmail.com?subject=Ritmo%20pilot"
-                ><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg>Send an email</a
-              >
+              <a class="button button--inverse" data-email-link data-subject="Ritmo pilot" hidden><svg class="i" aria-hidden="true"><use href="#i-mail" /></svg>Send an email</a>
+              <a class="button button--inverse-outline" data-whatsapp-link hidden><svg class="i" aria-hidden="true"><use href="#i-message" /></svg>Message us on WhatsApp</a>
             </div>
           </div>
         </div>
@@ -2650,6 +2670,10 @@
                 <path class="zero-ticks" d="M540 308v54M540 718v54M308 540h54M718 540h54" /></svg
               ><span translate="no">a marco zero labs product</span>
             </p>
+            <!-- TODO: razão social e CNPJ. Ficam fora da tela até serem preenchidos:
+            <p>[razão social] · CNPJ [número]</p>
+            -->
+            <p>Marco Zero Labs<br />Recife, Pernambuco</p>
             <p>A software studio from Pernambuco, creating Ritmo.</p>
           </div>
           <nav aria-label="Footer">
@@ -2665,14 +2689,16 @@
           <div>
             <h2>Contact</h2>
             <ul>
-              <li><a href="mailto:marcozerolabs@gmail.com?subject=Ritmo%20pilot">marcozerolabs@gmail.com</a></li>
-              <li><a href="https://www.instagram.com/marcozerolabs/">Instagram @marcozerolabs</a></li>
+              <li><a data-email-link data-email-text data-subject="Ritmo pilot" hidden></a></li>
+              <li data-whatsapp-item hidden><a data-whatsapp-link>WhatsApp</a></li>
+              <li><a href="https://www.instagram.com/marcozerolabs/" rel="noopener">Instagram @marcozerolabs</a></li>
+              <li><a href="privacy.html">Privacy policy</a></li>
               <li><a href="../" lang="pt-BR" hreflang="pt-BR">Português</a></li>
               <li><a href="./" lang="en" hreflang="en">English</a></li>
             </ul>
           </div>
         </div>
-        <p class="legal">© 2026 Marco Zero Labs. This site uses no cookies and collects no browsing data.</p>
+        <p class="legal">© 2026 Marco Zero Labs. This site uses no cookies and does not track your browsing. Made in Recife.</p>
       </div>
     </footer>
   </body>

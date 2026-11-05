@@ -1,7 +1,28 @@
 // Interactions for the phone preview and the calculator. Without this file the page
 // still shows the iOS preview on the Ask screen, and all the text.
 (function () {
-  // Theme and platform: native radio buttons, so arrow keys already work.
+  // Theme: native radio buttons, so arrow keys already work. Platform: toggle buttons.
+  document.addEventListener('click', function (event) {
+    var button = event.target.closest && event.target.closest('button[data-pref-button]');
+    if (button) window.RitmoPrefs.set(button.dataset.prefButton, button.dataset.value);
+  });
+
+  // Device section: one soft entrance, the first time it appears. CSS skips it for reduced motion.
+  var reveals = document.querySelectorAll('[data-reveal]');
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-revealed');
+        revealObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(function (element) {
+      element.classList.add('reveal');
+      revealObserver.observe(element);
+    });
+  }
+
   document.addEventListener('change', function (event) {
     var input = event.target;
     if (input.matches && input.matches('input[data-pref]') && input.checked) {
@@ -87,13 +108,14 @@
       var active = number('active');
       var ticket = number('ticket');
       var stopped = number('stopped');
-      var money = new Intl.NumberFormat(document.documentElement.lang, { style: 'currency', currency: 'BRL', currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0 });
+      // The currency is always the company's; only the number format follows the language.
+      var amount = new Intl.NumberFormat(document.documentElement.lang, { maximumFractionDigits: 0 });
       if (stopped > active) {
         output.textContent = '—';
         share.textContent = form.dataset.tooMany;
         return;
       }
-      output.textContent = money.format(stopped * ticket);
+      output.textContent = 'R$\u00a0' + amount.format(stopped * ticket);
       var percent = active > 0 ? Math.round((stopped / active) * 100) : 0;
       share.textContent = form.dataset.share.replace('{percent}', percent);
     };

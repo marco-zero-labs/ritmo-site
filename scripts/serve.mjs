@@ -38,7 +38,8 @@ createServer((request, response) => {
   }
   if (existsSync(path) && statSync(path).isDirectory()) path = join(path, 'index.html');
   if (!existsSync(path)) {
-    response.writeHead(404).end('Not found');
+    response.writeHead(404, { 'Content-Type': TYPES['.html'] });
+    createReadStream(join(root, '404.html')).pipe(response);
     return;
   }
   response.writeHead(200, { 'Content-Type': TYPES[extname(path)] ?? 'application/octet-stream' });

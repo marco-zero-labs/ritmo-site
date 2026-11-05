@@ -189,3 +189,75 @@
 .app-lock--list { padding-top: calc(16 * var(--u)); }
 .device--ios .app-lock--list { padding-top: calc(24 * var(--u)); }
 .app-shade-title { padding: calc(4 * var(--u)) calc(4 * var(--u)) calc(6 * var(--u)); font-size: calc(19 * var(--u)); line-height: calc(26 * var(--u)); font-weight: 600; }
+
+/* Device section: the visitor's own system. device.js sets data-os and data-form on <html>.
+   The frames are generic shapes, with no logo and no real model. */
+.preview-device { display: grid; justify-items: center; gap: var(--space-4); min-width: 0; }
+.device-switch { justify-self: center; }
+.device-note { margin: 0; color: var(--ink-muted); font-size: 15px; line-height: 22px; text-align: center; }
+
+/* Tablet: 4:3, only for tablet visitors, in place of the phone */
+.device-tablet { display: none; min-width: 0; margin: 0; }
+html[data-form="tablet"] .device-tablet { display: block; }
+html[data-form="tablet"] .preview-device,
+html[data-form="tablet"] .preview-tabs.needs-js,
+html[data-form="tablet"] .preview-chips { display: none !important; }
+.device-tablet-frame { aspect-ratio: 4 / 3; overflow: hidden; background: var(--surface); border: 10px solid var(--bezel-color, #1a1a17); border-radius: 24px; box-shadow: var(--shadow-overlay); }
+.device-tablet-frame picture { display: block; height: 100%; }
+.device-tablet-frame img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: left top; }
+.device-tablet figcaption, .device-laptop figcaption { margin-top: var(--space-3); color: var(--ink-muted); font-size: 14px; line-height: 20px; text-align: center; }
+
+/* Laptop: smaller than the phone section, with the window of the visitor's system */
+.device-laptop { width: 100%; max-width: 320px; min-width: 0; margin: 0 auto; }
+@media (min-width: 900px) { .device-laptop { max-width: 520px; margin: 0; align-self: end; } }
+.device-laptop-lid { padding: 6px 6px 10px; background: #1a1a17; border-radius: 10px 10px 0 0; }
+.device-laptop-base { height: var(--space-2); margin-inline: calc(var(--space-2) * -1); background: var(--border-strong); border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+.window { overflow: hidden; background: var(--surface); border-radius: 4px; }
+.window picture, .window img { display: block; width: 100%; height: auto; }
+
+/* Window title bar. Default: neutral, with the title only. */
+.window-bar { display: flex; align-items: center; justify-content: center; gap: var(--space-2); height: 28px; padding-inline: var(--space-3); background: var(--surface-muted); color: var(--ink-muted); font-size: 12px; line-height: 16px; font-weight: 500; }
+.window-title { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.window-lights, .window-buttons, .window-min, .window-max, .window-close { display: none; }
+.window-lights { gap: 6px; }
+.window-lights i { width: 10px; height: 10px; background: var(--border-strong); border-radius: 50%; }
+
+/* macOS: three circles on the left, title in the center */
+html[data-os="macos"] .window-bar { justify-content: flex-start; }
+html[data-os="macos"] .window-lights { display: inline-flex; flex: 1 1 0; }
+html[data-os="macos"] .window-title { flex: 0 1 auto; }
+html[data-os="macos"] .window-buttons { display: block; flex: 1 1 0; }
+
+/* Windows: title on the left, three square buttons on the right, on a solid tinted surface like Mica */
+html[data-os="windows"] .window-bar { justify-content: space-between; padding-inline: var(--space-3) 0; background: color-mix(in srgb, var(--brand) 8%, var(--surface)); border-radius: 0; }
+html[data-os="windows"] .window { border-radius: 2px; }
+html[data-os="windows"] .window-buttons { display: inline-flex; height: 100%; }
+html[data-os="windows"] .window-min,
+html[data-os="windows"] .window-max,
+html[data-os="windows"] .window-close { position: relative; display: block; width: 36px; height: 100%; }
+html[data-os="windows"] .window-min::before { content: ""; position: absolute; top: 50%; left: 50%; width: 10px; height: 1px; background: currentColor; transform: translateX(-50%); }
+html[data-os="windows"] .window-max::before { content: ""; position: absolute; top: 50%; left: 50%; width: 9px; height: 9px; border: 1px solid currentColor; transform: translate(-50%, -50%); }
+html[data-os="windows"] .window-close::before,
+html[data-os="windows"] .window-close::after { content: ""; position: absolute; top: 50%; left: 50%; width: 12px; height: 1px; background: currentColor; transform: translate(-50%, -50%) rotate(45deg); }
+html[data-os="windows"] .window-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* Linux: GNOME style, centered title and a round close button on the right */
+html[data-os="linux"] .window { border-radius: 8px; }
+html[data-os="linux"] .window-bar { justify-content: space-between; height: 32px; color: var(--ink); font-weight: 600; }
+html[data-os="linux"] .window-bar::before { content: ""; width: 18px; }
+html[data-os="linux"] .window-buttons { display: inline-flex; }
+html[data-os="linux"] .window-close { position: relative; display: block; width: 18px; height: 18px; background: var(--border); border-radius: 50%; }
+html[data-os="linux"] .window-close::before,
+html[data-os="linux"] .window-close::after { content: ""; position: absolute; top: 50%; left: 50%; width: 8px; height: 1px; background: currentColor; transform: translate(-50%, -50%) rotate(45deg); }
+html[data-os="linux"] .window-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+/* One soft entrance, only for visitors who accept motion */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(var(--space-3)); transition: opacity var(--duration-slow) ease-out, transform var(--duration-slow) ease-out; }
+  .reveal.is-revealed { opacity: 1; transform: none; }
+}
+
+/* On the dark theme a dark frame disappears into the page, so it gets a thin outline. */
+[data-theme="dark"] .device-frame,
+[data-theme="dark"] .device-laptop-lid,
+[data-theme="dark"] .device-tablet-frame { outline: 1px solid var(--border-strong); }

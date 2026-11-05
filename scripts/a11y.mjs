@@ -13,9 +13,9 @@ const axeSource = readFileSync(createRequire(import.meta.url).resolve('axe-core/
 const browser = await chromium.launch({ channel: 'chrome' });
 let violations = 0;
 try {
-  for (const [lang, path] of [['pt-BR', ''], ['en', 'en/']]) {
+  for (const [lang, path] of [['pt-BR', ''], ['en', 'en/'], ['pt-BR', 'privacidade.html'], ['en', 'en/privacy.html'], ['pt-BR', '404.html']]) {
     for (const colorScheme of ['light', 'dark']) {
-      for (const [device, viewport] of [['phone', { width: 390, height: 844 }], ['desktop', { width: 1280, height: 900 }]]) {
+      for (const [device, viewport] of [['phone', { width: 390, height: 844 }], ['desktop', { width: 1440, height: 900 }]]) {
         const context = await browser.newContext({ viewport, colorScheme });
         const page = await context.newPage();
         const failed = [];
@@ -27,15 +27,17 @@ try {
         const broken = await page.evaluate(() => [...document.images].filter((i) => !i.complete || !i.naturalWidth).map((i) => i.src));
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
         const actual = await page.evaluate(() => ({ lang: document.documentElement.lang, theme: document.documentElement.dataset.theme }));
+        await page.evaluate(() => { for (const element of document.querySelectorAll('.reveal')) element.classList.add('is-revealed'); });
+        await page.waitForTimeout(400);
         await page.evaluate(axeSource);
         const result = await page.evaluate(() => window.axe.run({ runOnly: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa', 'best-practice'] }));
         violations += result.violations.length + failed.length + broken.length + (overflow > 0 ? 1 : 0);
-        console.log(`${lang} ${colorScheme} ${device}: axe ${result.violations.length} violations, ${result.passes.length} passes, http errors ${failed.length}, broken images ${broken.length}, overflow ${overflow}px, lang=${actual.lang}, theme=${actual.theme}`);
+        console.log(`${lang} ${path || 'home'} ${colorScheme} ${device}: axe ${result.violations.length} violations, ${result.passes.length} passes, http errors ${failed.length}, broken images ${broken.length}, overflow ${overflow}px, lang=${actual.lang}, theme=${actual.theme}`);
         for (const violation of result.violations) {
           console.log(`  ${violation.impact} ${violation.id}: ${violation.help}`);
           for (const node of violation.nodes.slice(0, 3)) console.log(`    ${node.target.join(' ')}`);
         }
-        if (shots) await page.screenshot({ path: join(shots, `${lang}-${colorScheme}-${device}.png`), fullPage: true });
+        if (shots) await page.screenshot({ path: join(shots, `${lang}-${path.includes('priv') ? 'privacy-' : path.includes('404') ? '404-' : ''}${colorScheme}-${device}.png`), fullPage: true });
         await context.close();
       }
     }

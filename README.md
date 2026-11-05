@@ -63,7 +63,7 @@ gh release create videos-v1 media/*.mp4 media/*.png --repo marco-zero-labs/ritmo
 node scripts/og-image.mjs
 ```
 
-This writes `assets/og-image-pt-BR.png` and `assets/og-image-en.png`.
+This writes `assets/og/ritmo-pt-BR.png` and `assets/og/ritmo-en.png`.
 
 ## Take review screenshots
 
